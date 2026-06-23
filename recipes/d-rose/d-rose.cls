@@ -121,10 +121,8 @@
 
 % Title page — transparent bg, allows background image through
 \IfFileExists{fig/hkskyline.png}{%
-  \def\drosehasskyline{1}%
-}{%
-  \def\drosehasskyline{0}%
-}
+  \newcommand\drosehasskyline{yes}%
+}{}
 
 \setbeamertemplate{title page}{%
   \vspace{1.5cm}
@@ -141,12 +139,12 @@
     \vspace{0.2cm}
     {\usebeamerfont{date}\insertdate}\par
   \end{beamercolorbox}%
-  \begin{tikzpicture}[remember picture,overlay]
-    \if1\drosehasskyline
+  \ifdefined\drosehasskyline
+    \begin{tikzpicture}[remember picture,overlay]
       \node[anchor=south] at (current page.south)
         {\includegraphics[width=\paperwidth]{fig/hkskyline.png}};
-    \fi
-  \end{tikzpicture}%
+    \end{tikzpicture}%
+  \fi
 }
 
 \tikzset{
