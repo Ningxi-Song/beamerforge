@@ -9,6 +9,10 @@
 *.fls
 *.fdb_latexmk
 *.synctex.gz
+*.bcf
+*.blg
+*.bbl
+*.run.xml
 
 # Generated PDFs (keep templates, ignore build artifacts)
 *.pdf
