@@ -1,17 +1,39 @@
 # recipes/d-rose
 
-Complete D Rose theme recipe. Black-red academic presentation with serif fonts, miniframes navigation, and pifont ding bullets.
+> *In the midst of oppression, we bloom.*
+>
+> — Inspired by Derrick Rose's logo and journey
+
+## Inspiration
+
+This theme draws from **Derrick Rose**, the youngest NBA MVP whose career was defined by breathtaking highs and devastating injuries. His personal logo — a rose blooming from the letter "D" — encodes the very paradox that drives this design:
+
+**Oppression and blooming coexist. Prosperity and regret are inseparable.**
+
+The deep red-black palette mirrors this tension. The red is not cheerful — it is the color of blood, struggle, and the fire that refuses to go out. The black is not neutral — it is the weight of what was lost. Together, they narrate a story where beauty emerges precisely from the crack in the pavement.
+
+## Best Suited For
+
+This template works best for narratives built around **polarities, contradictions, and dual forces**:
+
+- **Social inequality** — wealth vs poverty, privilege vs marginalization
+- **Urban polarization** — gentrification, segregation, the two faces of a city
+- **Conflict economics** — winners and losers of policy, trade, or technological change
+- **Crisis and resilience** — financial crashes, health shocks, climate adaptation
+- **Dual narratives** — any topic where two opposing truths must be held at once
+
+The template's visual language (dark headers against white space, red accents bleeding through) reinforces the tension between order and disruption, data and emotion.
 
 ## Elements Used
 
 | Layer | Element | ID |
 |-------|---------|-----|
 | Foundation | layout | 4:3, single column |
-| Foundation | frames | title-center |
+| Foundation | frames | title-center (with optional background image) |
 | Foundation | navigation | miniframes |
-| Variant | colors | blackred (RGB 186,84,68) |
-| Variant | typography | serif-neuton |
-| Variant | blocks | rounded, 3 types (normal/example/alert) |
+| Variant | colors | red-black (primary: RGB 186,84,68) |
+| Variant | typography | serif-neuton (bundled) |
+| Variant | blocks | rounded, 2 types (normal + alert) |
 | Variant | bullets | pifont ding 220/216 |
 | Content | content | bullets, figures, tables, flowchart |
 
@@ -19,7 +41,7 @@ Complete D Rose theme recipe. Black-red academic presentation with serif fonts, 
 
 1. Copy this recipe directory
 2. Edit `main.tex` with your title, author, institute
-3. Replace content in `content/*.tex` with your own slides
+3. Replace placeholder content in `content/*.tex` with your own slides
 4. Add figures to `fig/` and bibliography entries to `references.bib`
 5. Compile with XeLaTeX:
 
@@ -49,6 +71,7 @@ d-rose/
 ├── fig/                # Image assets
 ├── font/               # Bundled Neuton fonts
 ├── references.bib      # Bibliography
+├── page01~09.png       # Preview
 └── README.md           # This file
 ```
 
@@ -59,8 +82,8 @@ d-rose/
 | 1 | Title page with optional background image |
 | 2 | Motivation slide with bullet points |
 | 3 | Roadmap with numbered list |
-| 4 | Three block types (normal, example, alert) |
-| 5 | Figure with caption |
+| 4 | Two block types (normal + alert) |
+| 5 | Figure placeholder with caption |
 | 6 | TikZ flowchart diagram |
 | 7 | Summary statistics table |
 | 8 | Citation example |
@@ -90,20 +113,13 @@ Edit `d-rose.cls`:
 ]{Neuton}
 ```
 
-### Add Slides
+### Replace Background Image
 
-Create new `.tex` files in `content/` and include them in `main.tex`:
-
-```latex
-\input{content/new-section}
-```
-
-### Add Images
-
-Place images in `fig/` and reference them:
+The title page uses `fig/hkskyline.png` as a background. Replace it with your own image:
 
 ```latex
-\includegraphics[width=0.85\textwidth]{fig/my-image.png}
+% In main.tex, the image path:
+\includegraphics[width=\paperwidth]{fig/your-image.png}
 ```
 
 ## Build On Overleaf

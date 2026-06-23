@@ -67,6 +67,26 @@ beamer-design-system/
 └── anti-patterns/            # Common mistakes and fixes
 ```
 
+## Template Catalog
+
+Each template is a complete, compilable Beamer theme with its own personality and best-fit scenario.
+
+### [D Rose](recipes/d-rose/) — 暗场绽放 / Bloom in Darkness
+
+| Aspect | Description |
+|--------|-------------|
+| **Inspiration** | Derrick Rose (NBA superstar): his logo, his career of soaring highs and crushing lows |
+| **Core concept** | Oppression and blooming coexist; prosperity and regret are inseparable |
+| **Visual tone** | Deep red against white, serif fonts, subdued elegance with an undercurrent of tension |
+| **Best for** | Polarizing topics — social inequality, urban segregation, crisis narratives, dualities |
+| **Colors** | Red-black primary (RGB 186,84,68), white background, dark navy structure |
+| **Fonts** | Neuton (serif, bundled) |
+| **Navigation** | Miniframes header, page-number footer |
+| **Blocks** | 2 types — regular (dark gray title, light red body) + alert (red title, light red body) |
+| **Bullets** | Pifont ding (● outline style) |
+| **Preview** | [page01](recipes/d-rose/page01.png) · [page04](recipes/d-rose/page04.png) · [page06](recipes/d-rose/page06.png) |
+```
+
 ## For AI Users
 
 This repository is designed to be read by AI as context. When you ask AI to create a Beamer template, point it to this repo:
