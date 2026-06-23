@@ -54,15 +54,10 @@
 \definecolor{normalTextColor}{RGB}{0,0,0}
 \definecolor{alertTextColor}{RGB}{200,84,68}
 
-\definecolor{normalBlockColor}{RGB}{226,42,44}
-\definecolor{normalTitleBlockColor}{RGB}{0,0,0}
+\definecolor{normalBlockColor}{RGB}{249,189,187}
+\definecolor{normalTitleBlockColor}{RGB}{60,60,60}
 \definecolor{normalBlockTextColor}{RGB}{0,0,0}
 \definecolor{normalBlockTitleTextColor}{RGB}{255,255,255}
-
-\definecolor{exampleBlockColor}{RGB}{192,223,248}
-\definecolor{exampleTitleBlockColor}{RGB}{71,137,190}
-\definecolor{exampleBlockTextColor}{RGB}{0,0,0}
-\definecolor{exampleBlockTitleTextColor}{RGB}{255,255,255}
 
 \definecolor{alertBlockColor}{RGB}{249,189,187}
 \definecolor{alertTitleBlockColor}{RGB}{204,45,24}
@@ -101,8 +96,6 @@
 \setbeamercolor*{block body}{fg=normalBlockTextColor,bg=normalBlockColor}
 \setbeamercolor*{block title alerted}{fg=alertBlockTitleTextColor,bg=alertTitleBlockColor}
 \setbeamercolor*{block body alerted}{fg=alertBlockTextColor,bg=alertBlockColor}
-\setbeamercolor*{block title example}{fg=exampleBlockTitleTextColor,bg=exampleTitleBlockColor}
-\setbeamercolor*{block body example}{fg=exampleBlockTextColor,bg=exampleBlockColor}
 
 % Titles
 \setbeamerfont{title like}{shape=\scshape}
