@@ -27,3 +27,6 @@
 # OS files
 .DS_Store
 Thumbs.db
+
+# Exclude from repo
+recipes/blackred/

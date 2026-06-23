@@ -2,6 +2,8 @@
 
 > *In the midst of oppression, we bloom.*
 
+![D Rose Logo](fig/derrick-rose-seeklogo.png)
+
 ## Inspiration
 
 Derrick Rose — youngest NBA MVP, a career of breathtaking highs and devastating injuries. His logo, a rose blooming from the letter "D", encodes the paradox that drives this design: **oppression and blooming coexist, prosperity and regret are inseparable.**
