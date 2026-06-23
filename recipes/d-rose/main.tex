@@ -1,0 +1,164 @@
+\documentclass[10pt]{beamer}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+% ============================================================
+% Color Palette
+% ============================================================
+\definecolor{bg}{HTML}{F5F5F5}
+\definecolor{accent}{HTML}{C81E1E}
+\definecolor{accentDark}{HTML}{781414}
+\definecolor{accentLight}{HTML}{FF3C3C}
+\definecolor{accentMuted}{HTML}{666666}
+\definecolor{textMain}{HTML}{2D2D2D}
+
+\setbeamercolor{normal text}{fg=textMain,bg=bg}
+\setbeamercolor{frametitle}{fg=white,bg=accent}
+\setbeamercolor{title}{fg=textMain,bg=bg}
+
+% ============================================================
+% Fonts
+% ============================================================
+\setmainfont{Fira Sans}
+
+% ============================================================
+% Navigation: None
+% ============================================================
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{}
+
+% ============================================================
+% Bullet: Inverted Triangle
+% ============================================================
+\setbeamertemplate{itemize item}{%
+  \begin{tikzpicture}[baseline=-0.5ex]
+    \fill[accent] (0,0) -- (0.4,0) -- (0.2,-0.4) -- cycle;
+  \end{tikzpicture}%
+}
+
+% ============================================================
+% Block: Enhanced tcolorbox
+% ============================================================
+\tcbset{
+  enhanced,
+  sharp corners=south,
+  colback=white,
+  colframe=accent,
+  fonttitle=\bfseries,
+  coltitle=white,
+  colbacktitle=accent,
+}
+
+% ============================================================
+% Title Page: Left Aligned
+% ============================================================
+\setbeamertemplate{title page}{
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=north west, inner sep=0] at (current page.north west) {
+      \begin{beamercolorbox}[wd=\paperwidth, ht=\paperheight, dp=0pt]{title}
+        \vspace{3cm}
+        \hspace{2cm}
+        \begin{minipage}{0.8\paperwidth}
+          {\usebeamerfont{title}\color{textMain}\inserttitle\\[0.5cm]}
+          {\usebeamerfont{subtitle}\color{accentMuted}\insertsubtitle\\[1cm]}
+          {\usebeamerfont{date}\color{accentMuted}\insertdate}
+        \end{minipage}
+      \end{beamercolorbox}
+    };
+  \end{tikzpicture}
+}
+
+% ============================================================
+% Presentation Settings
+% ============================================================
+\title{Derrick Rose}
+\subtitle{In the Midst of Oppression, We Bloom}
+\date{2026}
+
+\begin{document}
+
+% ============================================================
+% Title Page
+% ============================================================
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+% ============================================================
+% Content
+% ============================================================
+\section{Introduction}
+\begin{frame}{The Journey Begins}
+  \begin{tcolorbox}[title=Background]
+    From the streets of Chicago to the NBA MVP stage.\\
+    A story of talent, injury, and resilience.
+  \end{tcolorbox}
+
+  \begin{itemize}
+    \item Born in Chicago, Illinois
+    \item Rose to fame at the University of Memphis
+    \item Drafted \#1 overall by Chicago Bulls in 2008
+    \item Youngest NBA MVP in history (2011)
+  \end{itemize}
+\end{frame}
+
+\section{The Rise}
+\begin{frame}{MVP Season}
+  \begin{tcolorbox}[title=2010-2011 Season]
+    Derrick Rose led the Chicago Bulls to the best record in the NBA.
+  \end{tcolorbox}
+
+  \begin{itemize}
+    \item Averaged 25.0 points per game
+    \item Led Bulls to 62 wins
+    \item Named youngest MVP in NBA history
+    \item Electrifying playing style
+  \end{itemize}
+\end{frame}
+
+\section{The Fall}
+\begin{frame}{Injuries}
+  \begin{tcolorbox}[title=Setbacks]
+    A devastating knee injury changed everything.
+  \end{tcolorbox}
+
+  \begin{itemize}
+    \item Torn ACL in 2012 playoffs
+    \item Multiple comeback attempts
+    \item Traded to New York Knicks
+    \item Career seemed over
+  \end{itemize}
+\end{frame}
+
+\section{The Comeback}
+\begin{frame}{Resilience}
+  \begin{tcolorbox}[title=Return]
+    Against all odds, Rose returned to the court.
+  \end{tcolorbox}
+
+  \begin{itemize}
+    \item Signed with Minnesota Timberwolves
+    \item Scored 50 points in a game
+    \item Emotional comeback story
+    \item Proved doubters wrong
+  \end{itemize}
+\end{frame}
+
+\section{Legacy}
+\begin{frame}{Inspiration}
+  \begin{tcolorbox}[title=Impact]
+    More than a basketball player. A symbol of perseverance.
+  \end{tcolorbox}
+
+  \begin{itemize}
+    \item Inspired a generation of players
+    \item Overcame adversity
+    \item Chicago's own hero
+    \item ``The Windy City's Finest''
+  \end{itemize}
+\end{frame}
+
+\end{document}

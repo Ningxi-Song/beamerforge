@@ -1,0 +1,147 @@
+\documentclass[10pt]{beamer}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{pifont}
+\usepackage{wasysym}
+\usepackage{marvosym}
+\usepackage{amssymb}
+\usepackage{bbding}
+\usetikzlibrary{shapes.geometric}
+
+\definecolor{bg}{HTML}{F5F5F5}
+\definecolor{textMain}{HTML}{2D2D2D}
+
+\setbeamercolor{normal text}{fg=textMain,bg=bg}
+\setbeamercolor{frametitle}{fg=white,bg=bg}
+\setbeamercolor{title}{fg=textMain,bg=bg}
+
+\title{Extended Bullet Points Catalog}
+\subtitle{BeamerForge Global Reference - Grouped}
+\date{}
+
+\begin{document}
+
+% ============================================================
+\section{MarVoSym + Pifont + AMSSymb}
+
+\begin{frame}{MarVoSym + Pifont + AMSSymb}
+\begin{columns}
+\column{0.5\textwidth}
+\textbf{MarVoSym:}
+\begin{itemize}
+  \item \Checkedbox Checkedbox
+  \item \CrossedBox CrossedBox
+  \item \HollowBox HollowBox
+  \item \PointingHand PointingHand
+  \item \Smiley Smiley
+  \item \Frown Frown
+  \item \Lightning Lightning
+  \item \Info Info
+\end{itemize}
+
+\column{0.5\textwidth}
+\textbf{Pifont:}
+\begin{itemize}
+  \item \ding{32} Ding 32 (Star Open)
+  \item \ding{67} Ding 67 (Star Filled)
+  \item \ding{70} Ding 70 (Circle)
+  \item \ding{109} Ding 109 (Checkmark 2)
+  \item \ding{110} Ding 110 (X Mark 2)
+  \item \ding{168} Ding 168 (Heart)
+\end{itemize}
+\end{columns}
+\end{frame}
+
+\begin{frame}{AMSSymb + Math}
+\begin{columns}
+\column{0.5\textwidth}
+\textbf{AMSSymb:}
+\begin{itemize}
+  \item \maltese Maltese cross
+  \item \bigstar Big star
+  \item \blacklozenge Black lozenge
+  \item \blacksquare Black square
+  \item \bullet Math bullet
+  \item \circledast Circled asterisk
+\end{itemize}
+
+\column{0.5\textwidth}
+\textbf{Math Symbols:}
+\begin{itemize}
+  \item $\diamond$ Diamond
+  \item $\star$ Star
+  \item $\ast$ Asterisk
+  \item $\dagger$ Dagger
+  \item $\ddagger$ Double dagger
+  \item $\oplus$ Circled plus
+\end{itemize}
+\end{columns}
+\end{frame}
+
+% ============================================================
+\section{TikZ Shapes}
+
+\begin{frame}{TikZ: Octagon + Decagon + Starburst}
+\begin{columns}
+\column{0.5\textwidth}
+\begin{itemize}
+  \item Octagon bullet
+  \item Decagon bullet
+  \item Starburst shape
+  \item Cloud shape
+\end{itemize}
+
+\column{0.5\textwidth}
+\begin{itemize}
+  \item X mark (cross)
+  \item Plus sign
+  \item Arrow right ($\rightarrow$)
+  \item Double arrow ($\Rightarrow$)
+\end{itemize}
+\end{columns}
+\end{frame}
+
+\begin{frame}{TikZ: Custom Shapes}
+\begin{columns}
+\column{0.5\textwidth}
+\begin{itemize}
+  \item Teardrop shape
+  \item Starburst shape
+  \item Cloud shape
+  \item Circle bullet
+\end{itemize}
+
+\column{0.5\textwidth}
+\begin{itemize}
+  \item Diamond bullet
+  \item Triangle bullet
+  \item Bullet symbol
+  \item Star symbol
+\end{itemize}
+\end{columns}
+\end{frame}
+
+% ============================================================
+\section{Summary}
+
+\begin{frame}{Quick Reference}
+\centering
+\scriptsize
+\begin{tabular}{l l l}
+\toprule
+\textbf{Package} & \textbf{Style} & \textbf{Code} \\
+\midrule
+MarVoSym & Checkedbox & \texttt{\textbackslash Checkedbox} \\
+MarVoSym & CrossedBox & \texttt{\textbackslash CrossedBox} \\
+MarVoSym & HollowBox & \texttt{\textbackslash HollowBox} \\
+MarVoSym & PointingHand & \texttt{\textbackslash PointingHand} \\
+Pifont & Ding 67 & \texttt{\textbackslash ding\{67\}} \\
+AMSSymb & maltese & \texttt{\textbackslash maltese} \\
+Math & diamond & \texttt{\$\textbackslash diamond\$} \\
+TikZ & Octagon & \texttt{regular polygon sides=8} \\
+TikZ & Starburst & \texttt{starburst} \\
+\bottomrule
+\end{tabular}
+\end{frame}
+
+\end{document}

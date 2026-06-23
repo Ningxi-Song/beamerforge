@@ -206,6 +206,16 @@ Adapt per presentation.
 
 ## 4. Anti-Patterns to Avoid
 
+### 4.1 Strict Prohibitions
+
+| Anti-Pattern | Problem | Fix |
+|--------------|---------|-----|
+| **Dark solid background** | Harsh, reduces readability, eye strain | Use light background (#F5F5F5) or off-white |
+| **Pure black background** | Too harsh, poor contrast | Use light background |
+| **Pure white background** | Too bright for projectors, glare | Use off-white (#F5F5F5) |
+
+### 4.2 Common Mistakes
+
 | Anti-Pattern | Problem | Fix |
 |--------------|---------|-----|
 | \Large in body text | Breaks hierarchy | Use bold or color |
