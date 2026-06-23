@@ -1,17 +1,18 @@
 # recipes/d-rose
 
-D Rose Beamer theme — pure white background, deep accent red, arrow-head bullets, tcolorbox blocks.
+Complete D Rose theme recipe. Black-red academic presentation with serif fonts, miniframes navigation, and pifont ding bullets.
 
 ## Elements Used
 
 | Layer | Element | ID |
 |-------|---------|-----|
-| Foundation | frames | title-left |
-| Foundation | navigation | none (page number only) |
-| Variant | colors | deep-red (#B91C1C) + white (#FFFFFF) |
-| Variant | typography | sans-fira (fallback: Latin Modern) |
-| Variant | blocks | tcolorbox, 3 types, sharp corners south |
-| Variant | bullets | arrow-head (dart, custom TikZ) |
+| Foundation | layout | 4:3, single column |
+| Foundation | frames | title-center |
+| Foundation | navigation | miniframes |
+| Variant | colors | blackred (RGB 186,84,68) |
+| Variant | typography | serif-neuton |
+| Variant | blocks | rounded, 3 types (normal/example/alert) |
+| Variant | bullets | pifont ding 220/216 |
 | Content | content | bullets, figures, tables, flowchart |
 
 ## Quick Start
@@ -19,12 +20,12 @@ D Rose Beamer theme — pure white background, deep accent red, arrow-head bulle
 1. Copy this recipe directory
 2. Edit `main.tex` with your title, author, institute
 3. Replace content in `content/*.tex` with your own slides
-4. Add figures to `fig/` and bibliography to `references.bib`
+4. Add figures to `fig/` and bibliography entries to `references.bib`
 5. Compile with XeLaTeX:
 
 ```bash
 xelatex main.tex
-biber main        # if using citations
+biber main
 xelatex main.tex
 xelatex main.tex
 ```
@@ -39,28 +40,31 @@ latexmk -xelatex -interaction=nonstopmode main.tex
 
 ```
 d-rose/
-├── d-rose.cls          # Theme class file (colors, fonts, bullets, blocks)
-├── main.tex            # Main presentation file (title, includes, bibliography)
-├── references.bib      # BibLaTeX bibliography
+├── d-rose.cls          # Theme class file
+├── main.tex            # Main presentation file
 ├── content/            # Slide sections
-│   ├── overview.tex    # Motivation, roadmap, blocks, bullets
-│   ├── figures.tex     # Figure placeholder, two-column, TikZ diagrams
-│   └── tables.tex      # Summary stats table, regression table, citation
-└── fig/                # (optional) Image assets
+│   ├── overview.tex    # Motivation, roadmap, blocks
+│   ├── figures.tex     # Figure placeholder, TikZ diagram
+│   └── tables.tex      # Table example, citation example
+├── fig/                # Image assets
+├── font/               # Bundled Neuton fonts
+├── references.bib      # Bibliography
+└── README.md           # This file
 ```
 
 ## Template Features Demonstrated
 
 | Slide | Feature |
 |-------|---------|
-| 1 | Title page — left-aligned with red accent bar |
-| 2-4 | Overview: motivation, roadmap, block types |
-| 5 | Bullet hierarchy (itemize + enumerate) |
-| 6-7 | Figure placeholders (single + two-column) |
-| 8-9 | TikZ diagrams (flowchart + mechanism) |
-| 10-11 | Tables (summary stats + regression) |
-| 12 | Citation setup |
-| 13 | References |
+| 1 | Title page with optional background image |
+| 2 | Motivation slide with bullet points |
+| 3 | Roadmap with numbered list |
+| 4 | Three block types (normal, example, alert) |
+| 5 | Figure with caption |
+| 6 | TikZ flowchart diagram |
+| 7 | Summary statistics table |
+| 8 | Citation example |
+| 9 | References |
 
 ## Customization
 
@@ -69,21 +73,21 @@ d-rose/
 Edit `d-rose.cls`:
 
 ```latex
-\definecolor{accent}{HTML}{B91C1C}       % Primary red
-\definecolor{accentDark}{HTML}{1A1A1A}   % Near-black
-\definecolor{bg}{HTML}{FFFFFF}           % Background white
+\definecolor{redblack}{RGB}{186,84,68}     % Primary color
+\definecolor{titleTextColor}{RGB}{1,49,78} % Structure color
 ```
 
-### Change Bullets
+### Change Fonts
 
-Edit `d-rose.cls` bullet section. The theme uses a right-pointing arrow head (TikZ):
+Edit `d-rose.cls`:
 
 ```latex
-\setbeamertemplate{itemize item}{%
-  \begin{tikzpicture}[baseline=-0.5ex]
-    \fill[accent] (0,0) -- (0.35,0.2) -- (0.35,-0.2) -- cycle;
-  \end{tikzpicture}%
-}
+\setmainfont[
+  Path = font/,
+  UprightFont = Neuton-Regular.ttf,
+  ItalicFont = Neuton-Italic.ttf,
+  BoldFont = Neuton-Regular.ttf
+]{Neuton}
 ```
 
 ### Add Slides
@@ -94,13 +98,35 @@ Create new `.tex` files in `content/` and include them in `main.tex`:
 \input{content/new-section}
 ```
 
+### Add Images
+
+Place images in `fig/` and reference them:
+
+```latex
+\includegraphics[width=0.85\textwidth]{fig/my-image.png}
+```
+
+## Build On Overleaf
+
+1. Upload the whole folder to Overleaf
+2. Set `main.tex` as the main file
+3. In Menu, set Compiler to `XeLaTeX`
+4. Recompile
+
 ## Design Principles
 
 - One point per slide
 - Conclusion-driven titles
 - 3-5 bullets maximum
-- Pure white background, deep red accent
-- Arrow-head bullet with red accent
-- tcolorbox blocks with sharp bottom corners
-- No navigation bar (clean look)
-- Left-aligned title page with red accent bar
+- 35-40% whitespace
+- Figures over tables
+- Minimal emphasis
+
+## Anti-Patterns to Avoid
+
+- `\Large` or `\large` in body text
+- Paragraph text on slides
+- Blocks on every slide
+- Dense regression tables
+- Empty bottom third
+- Left-clustered content

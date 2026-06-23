@@ -1,11 +1,10 @@
-\documentclass[10pt]{d-rose}
+﻿\documentclass[10pt]{d-rose}
 
 \usepackage{csquotes}
 \usepackage[backend=biber,style=authoryear,maxcitenames=2]{biblatex}
 \addbibresource{references.bib}
 
 \title[]{Presentation Title}
-\subtitle{Optional Subtitle}
 \author[]{Author Name}
 \institute[]{Institution Name}
 \date{}
@@ -14,9 +13,12 @@
 
 {%
 \usebackgroundtemplate{%
-  \begin{tikzpicture}[remember picture,overlay]
-    \fill[accent] (current page.north west) rectangle ([xshift=0.4cm]current page.south west);
-  \end{tikzpicture}%
+  \IfFileExists{fig/hkskyline.png}{%
+    \begin{tikzpicture}[remember picture,overlay]
+      \node[anchor=south, yshift=-0.5cm] at (current page.south)
+        {\includegraphics[width=\paperwidth]{fig/hkskyline.png}};
+    \end{tikzpicture}%
+  }{}%
 }
 \begin{frame}[plain]
   \vspace{-1cm}
@@ -29,8 +31,10 @@
 \input{content/tables}
 
 \begin{frame}[allowframebreaks]{References}
-  \nocite{*}
+  \nocite{einstein1905}
   \printbibliography
 \end{frame}
 
 \end{document}
+
+

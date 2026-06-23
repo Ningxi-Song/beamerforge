@@ -1,51 +1,24 @@
-\section{Tables}
+﻿\section{Tables}
 
-\begin{frame}{Table Example — Summary Statistics}
-  \begin{table}
-    \centering
-    \begin{tabular}{lccc}
-      \toprule
-      Group & Mean & SD & N \\
-      \midrule
-      A & 1.25 & 0.42 & 120 \\
-      B & 1.47 & 0.51 & 118 \\
-      C & 1.39 & 0.48 & 122 \\
-      \bottomrule
-      \end{tabular}
-    \caption{A compact table using \texttt{booktabs}. Replace with your own data.}
-  \end{table}
-\end{frame}
-
-\begin{frame}{Table Example — Regression Results}
-  \begin{table}
-    \centering
-    \small
-    \begin{tabular}{lccc}
-      \toprule
-      & (1) & (2) & (3) \\
-      & Baseline & + Controls & + Fixed Effects \\
-      \midrule
-      Treatment effect & 0.15\textsuperscript{***} & 0.12\textsuperscript{**} & 0.10\textsuperscript{*} \\
-      & (0.03) & (0.04) & (0.05) \\
-      \midrule
-      Controls & No & Yes & Yes \\
-      Fixed effects & No & No & Yes \\
-      \(R^2\) & 0.12 & 0.31 & 0.45 \\
-      \(N\) & 360 & 360 & 360 \\
-      \bottomrule
-      \addlinespace
-      \multicolumn{4}{p{0.85\textwidth}}{\footnotesize \textit{Note:} Standard errors in parentheses. \textsuperscript{*} \(p < 0.10\), \textsuperscript{**} \(p < 0.05\), \textsuperscript{***} \(p < 0.01\). Replace with your estimates.}
-      \end{tabular}
-    \caption{A regression table following economics conventions.}
-  \end{table}
+\begin{frame}{Table Example}
+\begin{table}
+\centering
+\begin{tabular}{lccc}
+\toprule
+Group & Mean & SD & N \\
+\midrule
+A & 1.25 & 0.42 & 120 \\
+B & 1.47 & 0.51 & 118 \\
+C & 1.39 & 0.48 & 122 \\
+\bottomrule
+\end{tabular}
+\caption{A compact table using \texttt{booktabs}.}
+\end{table}
 \end{frame}
 
 \begin{frame}{Citation Example}
-  % A parenthetical citation looks like \parencite{einstein1905}.
-  % A textual citation looks like \textcite{einstein1905}.
+A parenthetical citation looks like \parencite{einstein1905}. A textual citation looks like \textcite{einstein1905}.
 
-  To use citations, add entries to \texttt{references.bib} and compile with:
-  \begin{center}
-    \texttt{xelatex main} \(\rightarrow\) \texttt{biber main} \(\rightarrow\) \texttt{xelatex main} \(\rightarrow\) \texttt{xelatex main}
-  \end{center}
+\vspace{0.6cm}
+Keep bibliography entries in \texttt{references.bib} and compile with Biber.
 \end{frame}
