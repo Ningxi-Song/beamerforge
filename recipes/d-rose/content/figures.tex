@@ -1,0 +1,65 @@
+\section{Figures}
+
+\begin{frame}{Figure Placeholder}
+  \begin{figure}
+    \centering
+    \fbox{\parbox[c][0.35\textheight][c]{0.75\textwidth}{\centering Add a figure to \texttt{fig/} and update this path.}}
+    \caption{Replace this placeholder with your own figure.}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Two-Column Figures}
+  \begin{columns}[T]
+    \column{0.5\textwidth}
+    \begin{figure}
+      \centering
+      \fbox{\parbox[c][0.25\textheight][c]{0.45\textwidth}{\centering Figure 1}}
+      \caption{Left panel.}
+    \end{figure}
+
+    \column{0.5\textwidth}
+    \begin{figure}
+      \centering
+      \fbox{\parbox[c][0.25\textheight][c]{0.45\textwidth}{\centering Figure 2}}
+      \caption{Right panel.}
+    \end{figure}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{TikZ Flowchart}
+  \centering
+  \resizebox{\textwidth}{!}{%
+    \begin{tikzpicture}[
+      >=Latex,
+      node distance=1.4cm and 1.6cm,
+      box/.style={draw, rounded corners=2pt, minimum width=2.8cm, minimum height=1cm, align=center, fill=white},
+      arr/.style={->, thick, draw=accent}
+    ]
+      \node[box] (question) {Research\\Question};
+      \node[box, right=of question] (design) {Research\\Design};
+      \node[box, right=of design] (evidence) {Empirical\\Evidence};
+      \node[box, below=of design] (interpret) {Interpretation};
+
+      \draw[arr] (question) -- (design);
+      \draw[arr] (design) -- (evidence);
+      \draw[arr] (evidence) |- (interpret);
+      \draw[arr] (interpret) -| (question);
+    \end{tikzpicture}%
+  }
+\end{frame}
+
+\begin{frame}{TikZ Custom Diagram}
+  \centering
+  \begin{tikzpicture}[
+    node distance=1.8cm and 2cm,
+    bigbox/.style={draw, rounded corners=4pt, minimum width=3.5cm, minimum height=1.5cm, align=center, fill=accent!5, text=textMain},
+    arr/.style={->, thick, draw=accent}
+  ]
+    \node[bigbox] (x) {Explanatory\\Variables};
+    \node[bigbox, right=of x] (mechanism) {Mechanism};
+    \node[bigbox, right=of mechanism] (y) {Outcome\\Variable};
+
+    \draw[arr] (x) -- (mechanism);
+    \draw[arr] (mechanism) -- (y);
+  \end{tikzpicture}
+\end{frame}
