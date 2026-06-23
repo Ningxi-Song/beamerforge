@@ -1,4 +1,4 @@
-\documentclass[10pt]{beamer}
+﻿\documentclass[10pt]{beamer}
 \usepackage{tikz}
 \usepackage{xcolor}
 \usepackage{fontspec}
@@ -15,241 +15,140 @@
 
 \newcommand{\frow}[1]{%
   \IfFontExistsTF{#1}{%
-    \fontspec{#1}\makebox[3.2cm][l]{\tiny\bfseries #1}\hspace{0.2cm}%
-    \makebox[6.5cm][l]{The quick brown fox jumps over the lazy dog.}\\[0.22cm]%
-  }{\makebox[3.2cm][l]{\tiny\textcolor{gray}{#1 (N/A)}}\\[0.22cm]}%
+    \fontspec{#1}\makebox[3cm][l]{\tiny\bfseries #1}\hspace{0.2cm}%
+    \makebox[7cm][l]{The quick brown fox jumps over the lazy dog.}\\[0.2cm]%
+  }{}%
 }
 
 \begin{document}
 
-% ============================================================
-\begin{frame}{1. Neutral UI Sans}
+\begin{frame}{1. Sans-Serif}
 \vspace{-0.3cm}\scriptsize
 \frow{Inter} \frow{Roboto} \frow{Open Sans}
 \frow{Noto Sans} \frow{Source Sans 3} \frow{IBM Plex Sans}
-\frow{Public Sans} \frow{Lato} \frow{DM Sans}
-\frow{Manrope} \frow{Work Sans}
-\end{frame}
-
-% ============================================================
-\begin{frame}{2. Neo-grotesque}
-\vspace{-0.3cm}\scriptsize
+\frow{Lato} \frow{DM Sans} \frow{Manrope}
+\frow{Work Sans} \frow{Public Sans}
 \frow{Helvetica} \frow{Arial} \frow{Space Grotesk}
 \frow{Archivo} \frow{Mona Sans} \frow{Hubot Sans}
+\frow{Fira Sans} \frow{Cabin} \frow{Alegreya Sans}
+\frow{PT Sans} \frow{Ubuntu} \frow{Hind}
+\frow{Mulish} \frow{Karla}
+\frow{Montserrat} \frow{Poppins} \frow{Raleway}
+\frow{Jost} \frow{Outfit} \frow{Urbanist}
+\frow{Questrial} \frow{Josefin Sans} \frow{Sora}
+\frow{Lexend} \frow{Exo 2}
 \end{frame}
 
-% ============================================================
-\begin{frame}{3. Humanist Sans}
-\vspace{-0.3cm}\scriptsize
-\frow{Fira Sans} \frow{Lato} \frow{Cabin}
-\frow{Alegreya Sans} \frow{PT Sans} \frow{Ubuntu}
-\frow{Hind} \frow{Mulish} \frow{Karla}
-\end{frame}
-
-% ============================================================
-\begin{frame}{4. Geometric Sans}
-\vspace{-0.3cm}\scriptsize
-\frow{Futura} \frow{Montserrat} \frow{Poppins}
-\frow{Raleway} \frow{Jost} \frow{Outfit}
-\frow{Urbanist} \frow{Questrial} \frow{Josefin Sans}
-\frow{Sora} \frow{Lexend} \frow{Exo 2}
-\end{frame}
-
-% ============================================================
-\begin{frame}{5. Condensed / Narrow}
+\begin{frame}{2. Condensed, Rounded Sans}
 \vspace{-0.3cm}\scriptsize
 \frow{Roboto Condensed} \frow{Oswald} \frow{Archivo Narrow}
-\frow{Barlow Condensed} \frow{Fira Sans Condensed} \frow{Bebas Neue}
-\frow{Teko} \frow{Antonio} \frow{Fjalla One}
-\end{frame}
-
-% ============================================================
-\begin{frame}{6. Rounded Sans}
-\vspace{-0.3cm}\scriptsize
+\frow{Barlow Condensed} \frow{Fira Sans Condensed}
+\frow{Bebas Neue} \frow{Teko} \frow{Antonio} \frow{Fjalla One}
 \frow{Nunito} \frow{Nunito Sans} \frow{Rubik}
 \frow{Fredoka} \frow{Varela Round} \frow{Quicksand}
 \frow{Comfortaa} \frow{Baloo 2} \frow{Dosis}
 \end{frame}
 
-% ============================================================
-\begin{frame}{7. Old Style / Humanist Serif}
+\begin{frame}{3. Serif}
 \vspace{-0.3cm}\scriptsize
 \frow{EB Garamond} \frow{Crimson Text} \frow{Garamond}
-\frow{Alegreya} \frow{Vollkorn} \frow{Cardo}
-\frow{IM Fell English}
-\end{frame}
-
-% ============================================================
-\begin{frame}{8. Transitional Serif}
-\vspace{-0.3cm}\scriptsize
+\frow{Alegreya} \frow{Vollkorn} \frow{Cardo} \frow{IM Fell English}
 \frow{Georgia} \frow{Times New Roman} \frow{Merriweather}
-\frow{Lora} \frow{PT Serif} \frow{Tinos}
-\frow{Domine} \frow{Bitter}
-\end{frame}
-
-% ============================================================
-\begin{frame}{9. Modern Serif / Didone}
-\vspace{-0.3cm}\scriptsize
+\frow{Lora} \frow{PT Serif} \frow{Tinos} \frow{Domine} \frow{Bitter}
 \frow{Playfair Display} \frow{Abril Fatface} \frow{Prata}
 \frow{DM Serif Display} \frow{Italiana} \frow{Yeseva One}
 \frow{Cormorant Upright}
 \end{frame}
 
-% ============================================================
-\begin{frame}{10. Slab Serif}
+\begin{frame}{4. Slab, Editorial Serif}
 \vspace{-0.3cm}\scriptsize
 \frow{Roboto Slab} \frow{Arvo} \frow{Alfa Slab One}
 \frow{Bitter} \frow{Zilla Slab} \frow{Ultra}
 \frow{Bevan} \frow{Rokkitt}
-\end{frame}
-
-% ============================================================
-\begin{frame}{11. Editorial / Book Serif}
-\vspace{-0.3cm}\scriptsize
 \frow{Source Serif 4} \frow{Noto Serif} \frow{Literata}
-\frow{Spectral} \frow{IBM Plex Serif} \frow{Newsreader} \frow{Fraunces}
+\frow{Spectral} \frow{IBM Plex Serif} \frow{Newsreader}
+\frow{Fraunces} \frow{Latin Modern Roman} \frow{STIX Two Text}
 \end{frame}
 
-% ============================================================
-\begin{frame}{12. Clean Code Mono}
+\begin{frame}{5. Monospace}
 \vspace{-0.3cm}\scriptsize
 \frow{Fira Code} \frow{Source Code Pro} \frow{IBM Plex Mono}
 \frow{Roboto Mono} \frow{Noto Sans Mono} \frow{Ubuntu Mono}
 \frow{Inconsolata} \frow{Space Mono} \frow{DM Mono}
-\end{frame}
-
-% ============================================================
-\begin{frame}{13. Typewriter / Retro Mono}
-\vspace{-0.3cm}\scriptsize
 \frow{Courier New} \frow{Courier Prime} \frow{Special Elite}
-\frow{Cutive Mono} \frow{Anonymous Pro} \frow{Xanh Mono}
-\frow{Syne Mono}
+\frow{Cutive Mono} \frow{Anonymous Pro} \frow{Xanh Mono} \frow{Syne Mono}
 \end{frame}
 
-% ============================================================
-\begin{frame}{14. Bold Poster / Impact}
+\begin{frame}{6. Display: Bold, Fashion, Tech}
 \vspace{-0.3cm}\scriptsize
 \frow{Anton} \frow{Bebas Neue} \frow{Archivo Black}
 \frow{Oswald} \frow{Staatliches} \frow{Black Ops One}
 \frow{Bungee} \frow{Luckiest Guy} \frow{Changa One}
-\end{frame}
-
-% ============================================================
-\begin{frame}{15. Fashion / Luxury}
-\vspace{-0.3cm}\scriptsize
 \frow{Playfair Display} \frow{Bodoni Moda} \frow{Prata}
 \frow{DM Serif Display} \frow{Cinzel} \frow{Marcellus}
 \frow{Italiana} \frow{Yeseva One} \frow{Libre Bodoni}
-\end{frame}
-
-% ============================================================
-\begin{frame}{16. Tech / Futuristic}
-\vspace{-0.3cm}\scriptsize
 \frow{Orbitron} \frow{Exo 2} \frow{Rajdhani}
 \frow{Space Grotesk} \frow{Sora} \frow{Tomorrow}
 \frow{Zen Dots} \frow{Share Tech Mono} \frow{Audiowide}
 \end{frame}
 
-% ============================================================
-\begin{frame}{17. Vintage / Retro}
+\begin{frame}{7. Vintage, Playful, Script}
 \vspace{-0.3cm}\scriptsize
 \frow{Lobster} \frow{Pacifico} \frow{Limelight}
 \frow{Monoton} \frow{Rye} \frow{Smokum}
 \frow{Fascinate} \frow{Ultra} \frow{Special Elite}
-\end{frame}
-
-% ============================================================
-\begin{frame}{18. Playful / Comic / Kids}
-\vspace{-0.3cm}\scriptsize
 \frow{Comic Neue} \frow{Balsamiq Sans} \frow{Fredoka}
 \frow{Chewy} \frow{Luckiest Guy} \frow{Boogaloo}
 \frow{Cherry Bomb One} \frow{Patrick Hand} \frow{Short Stack}
-\end{frame}
-
-% ============================================================
-\begin{frame}{19. Elegant Script}
-\vspace{-0.3cm}\scriptsize
 \frow{Great Vibes} \frow{Allura} \frow{Parisienne}
 \frow{Alex Brush} \frow{Dancing Script} \frow{Sacramento}
 \frow{Tangerine} \frow{Pinyon Script} \frow{Rouge Script}
 \end{frame}
 
-% ============================================================
-\begin{frame}{20. Casual Handwriting}
+\begin{frame}{8. Handwriting, Brush, Blackletter}
 \vspace{-0.3cm}\scriptsize
 \frow{Caveat} \frow{Kalam} \frow{Patrick Hand}
 \frow{Indie Flower} \frow{Shadows Into Light} \frow{Permanent Marker}
 \frow{Gloria Hallelujah} \frow{Architects Daughter}
 \frow{Reenie Beanie} \frow{Homemade Apple}
-\end{frame}
-
-% ============================================================
-\begin{frame}{21. Brush / Sign Painting}
-\vspace{-0.3cm}\scriptsize
 \frow{Pacifico} \frow{Lobster} \frow{Satisfy}
 \frow{Yellowtail} \frow{Kaushan Script} \frow{Oleo Script}
 \frow{Merienda} \frow{Courgette} \frow{Damion} \frow{Norican}
-\end{frame}
-
-% ============================================================
-\begin{frame}{22. Blackletter / Gothic}
-\vspace{-0.3cm}\scriptsize
 \frow{UnifrakturMaguntia} \frow{Pirata One} \frow{New Rocker}
 \frow{MedievalSharp} \frow{Grenze Gotisch}
 \end{frame}
 
-% ============================================================
-\begin{frame}{23. Academic / Research}
-\vspace{-0.3cm}\scriptsize
-\frow{Source Serif 4} \frow{Noto Serif} \frow{Literata}
-\frow{Merriweather} \frow{Libre Baskerville} \frow{IBM Plex Serif}
-\frow{Latin Modern Roman} \frow{STIX Two Text}
-\end{frame}
-
-% ============================================================
-\begin{frame}{24. Data / Dashboard / Finance}
-\vspace{-0.3cm}\scriptsize
-\frow{Inter} \frow{Roboto} \frow{IBM Plex Sans}
-\frow{Source Sans 3} \frow{Public Sans} \frow{Noto Sans}
-\frow{Roboto Condensed} \frow{Archivo Narrow}
-\frow{Atkinson Hyperlegible} \frow{Space Mono}
-\end{frame}
-
-% ============================================================
 \begin{frame}{Quick Reference}
 \tiny
 \begin{tabular}{p{3cm} p{7.5cm}}
 \toprule
 \textbf{Category} & \textbf{Best For}\\
 \midrule
-Neutral UI Sans & Dashboards, apps, web UI, PPT body\\
-Neo-grotesque & Corporate branding, formal identity\\
-Humanist Sans & Education, consulting, long reading\\
-Geometric Sans & PPT titles, posters, startup brands\\
+Sans-Serif & Modern UI, dashboards, PPT body, branding\\
+Humanist Sans & Education, consulting, long-form reading\\
+Geometric Sans & PPT titles, posters, startup branding\\
 Condensed/Narrow & Charts, space-tight titles, posters\\
-Rounded Sans & Education, kids, friendly brands\\
+Rounded Sans & Education, kids, friendly consumer brands\\
 \midrule
 Old Style Serif & Books, literature, academic monographs\\
 Transitional Serif & Web body, reports, formal documents\\
-Modern/Didone & Fashion, luxury, magazine titles (not body)\\
-Slab Serif & Headlines, posters, industrial/retro\\
+Modern/Didone & Fashion, luxury, magazine titles\\
+Slab Serif & Headlines, posters, industrial/retro feel\\
 Editorial Serif & Modern reports, papers, e-books\\
 \midrule
-Code Mono & Code blocks, tech docs, terminals\\
-Typewriter Mono & Screenplays, retro docs\\
+Code Mono & Code blocks, tech docs, terminal output\\
+Typewriter Mono & Screenplays, retro documents, vintage\\
 \midrule
 Bold Poster & Event posters, video titles, hero text\\
-Fashion/Luxury & High-end brand headers, editorial\\
-Tech/Futuristic & AI, gaming, sci-fi conference\\
+Fashion/Luxury & High-end brand headers, editorial titles\\
+Tech/Futuristic & AI, gaming, sci-fi conference headers\\
 Vintage/Retro & Food, bars, music, themed events\\
-Playful/Comic & Kids, education, casual comms\\
+Playful/Comic & Kids, education, casual internal comms\\
 \midrule
 Elegant Script & Wedding invites, luxury logos\\
 Casual Handwriting & PPT annotations, personal notes\\
 Brush/Sign & Restaurant logos, lifestyle brands\\
-Blackletter & Metal music, medieval themes\\
-Academic & Papers, theses, grant proposals\\
-Data/Finance & Financial reports, dashboards, tables\\
+Blackletter & Metal music, medieval/history themes\\
 \bottomrule
 \end{tabular}
 \end{frame}
