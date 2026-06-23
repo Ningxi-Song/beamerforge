@@ -71,10 +71,12 @@ This is a **catalog + AI assistant** system for designing Beamer presentations.
 
 | Element ID | Layer | Category | Description |
 |------------|-------|----------|-------------|
+| `colors/blackred` | Variant | colors | Dark red-brown academic theme |
 | `colors/dark-blue` | Variant | colors | Dark blue academic theme |
 | `colors/dark-tech` | Variant | colors | Dark background with bright accents |
 | `colors/light-minimal` | Variant | colors | Clean light theme |
 | `colors/light-green` | Variant | colors | Fresh green palette |
+| `typography/serif-neuton` | Variant | typography | Neuton serif with bundled fonts |
 | `typography/serif-classic` | Variant | typography | Computer Modern serif family |
 | `typography/sans-modern` | Variant | typography | Sans-serif modern family |
 | `typography/mono-code` | Variant | typography | Monospace for code-heavy slides |
@@ -84,6 +86,7 @@ This is a **catalog + AI assistant** system for designing Beamer presentations.
 | `frames/title-center` | Foundation | frames | Centered title page |
 | `frames/title-left` | Foundation | frames | Left-aligned title page |
 | `frames/section-minimal` | Foundation | frames | Minimal section divider |
+| `navigation/miniframes` | Foundation | navigation | Section dots + page footer |
 | `navigation/none` | Foundation | navigation | No header/footer |
 | `navigation/footline-page` | Foundation | navigation | Page number only |
 | `navigation/footline-full` | Foundation | navigation | Author + title + page |
@@ -104,6 +107,7 @@ This is a **catalog + AI assistant** system for designing Beamer presentations.
 What do you want to create?
 │
 ├── "I want a complete theme"     → Pick from recipes/
+│   ├── Blackred academic         → recipes/blackred/
 │   ├── Academic style            → recipes/academic-classic/
 │   ├── Tech style                → recipes/tech-modern/
 │   ├── Business style            → recipes/business-minimal/
