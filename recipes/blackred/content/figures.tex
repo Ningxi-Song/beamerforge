@@ -1,0 +1,35 @@
+﻿\section{Figures}
+
+\begin{frame}{Figure Placeholder}
+\begin{figure}
+  \centering
+  \IfFileExists{fig/hkskyline.png}{%
+    \includegraphics[width=0.85\textwidth]{fig/hkskyline.png}%
+  }{%
+    \fbox{\parbox[c][0.35\textheight][c]{0.75\textwidth}{\centering Add a figure to \texttt{fig/} and update this path.}}%
+  }
+  \caption{Replace this example with your own figure.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Simple Diagram}
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[
+  >=Latex,
+  node distance=1.4cm and 1.6cm,
+  box/.style={draw, rounded corners=2pt, minimum width=2.6cm, minimum height=0.9cm, align=center, fill=white},
+  arr/.style={->, thick, draw=redblack}
+]
+\node[box] (question) {Question};
+\node[box, right=of question] (design) {Design};
+\node[box, right=of design] (evidence) {Evidence};
+\node[box, below=of design] (interpret) {Interpretation};
+
+\draw[arr] (question) -- (design);
+\draw[arr] (design) -- (evidence);
+\draw[arr] (evidence) |- (interpret);
+\draw[arr] (interpret) -| (question);
+\end{tikzpicture}%
+}
+\end{frame}

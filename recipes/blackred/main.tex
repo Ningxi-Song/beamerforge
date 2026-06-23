@@ -1,0 +1,40 @@
+﻿\documentclass[10pt]{blackred}
+
+\usepackage{csquotes}
+\usepackage[backend=biber,style=authoryear,maxcitenames=2]{biblatex}
+\addbibresource{references.bib}
+
+\title[]{Presentation Title}
+\author[]{Author Name}
+\institute[]{Institution Name}
+\date{}
+
+\begin{document}
+
+{%
+\usebackgroundtemplate{%
+  \IfFileExists{fig/hkskyline.png}{%
+    \begin{tikzpicture}[remember picture,overlay]
+      \node[anchor=south, yshift=-0.5cm] at (current page.south)
+        {\includegraphics[width=\paperwidth]{fig/hkskyline.png}};
+    \end{tikzpicture}%
+  }{}%
+}
+\begin{frame}[plain]
+  \vspace{-1cm}
+  \titlepage
+\end{frame}
+}
+
+\input{content/overview}
+\input{content/figures}
+\input{content/tables}
+
+\begin{frame}[allowframebreaks]{References}
+  \nocite{einstein1905}
+  \printbibliography
+\end{frame}
+
+\end{document}
+
+
