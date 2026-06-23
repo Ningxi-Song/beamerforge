@@ -4,66 +4,44 @@ A catalog of Beamer design elements with AI-assisted template generation. Browse
 
 ## How It Works
 
+Design flows from **vague to specific**. See [WORKFLOW.md](WORKFLOW.md) for the full process.
+
 ```
-┌──────────────┐     ┌──────────────┐     ┌──────────────┐
-│   BROWSE     │     │   PICK       │     │   GENERATE   │
-│              │     │              │     │              │
-│  Look at     │ ──→ │  Select      │ ──→ │  AI reads    │
-│  elements    │     │  elements    │     │  catalog +   │
-│  in catalog  │     │  you want    │     │  your picks  │
-└──────────────┘     └──────────────┘     └──────────────┘
-                                               │
-                                               ▼
-                                         ┌──────────────┐
-                                         │   REVIEW     │
-                                         │              │
-                                         │  AI checks   │
-                                         │  against     │
-                                         │  guidelines  │
-                                         └──────────────┘
+Vibe → Direction → Palette → Details → Template
+
+"I want something modern"  →  3 directions  →  3 palettes  →  fine-tune  →  .tex file
 ```
 
 ## Workflow
 
-### Step 1: Browse Elements
+### Step 1: Tell Us the Vibe
 
-Each element directory contains:
-- `README.md` — what it is, when to use, trade-offs
-- `examples/` — `.tex` code snippets
-- `preview/` — visual examples (screenshots)
-
-```bash
-# Browse available color themes
-ls elements/colors/
-
-# Browse available frame types
-ls elements/frames/
-```
-
-### Step 2: Pick Your Elements
-
-Tell AI what you want. Examples:
+Describe the overall feeling in natural language. No technical terms needed.
 
 ```
-"I want a dark theme with blue accents and sans-serif fonts"
-"I need a minimal academic template with serif fonts"
-"Give me a tech-style template with code blocks and dark background"
+"I want something modern and techy"
+"Make it look like a serious academic talk"
+"Something clean and minimal"
 ```
 
-### Step 3: AI Generates Template
+### Step 2: Pick a Direction
 
-AI reads the catalog as context, combines your picks, and produces:
-- A complete `.tex` file
+We show 2-3 visual directions based on your vibe. Each is a mood board — a single slide showing color palette, font feel, and overall tone.
+
+### Step 3: Pick a Palette
+
+We suggest 2-3 specific color + font combinations within your chosen direction.
+
+### Step 4: Fine-tune Details
+
+We ask about bullets, blocks, navigation, and title page — one at a time, with visual previews.
+
+### Step 5: Get Your Template
+
+We generate a complete `.tex` file with:
+- All selected elements combined
 - Compilation instructions
-- Customization notes
-
-### Step 4: Review & Refine
-
-AI reviews the generated template against the design guide:
-- Contrast ratios
-- Font hierarchy
-- Whitespace balance
-- Anti-pattern detection
+- Customization guide
 
 ## Catalog Structure
 
