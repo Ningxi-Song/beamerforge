@@ -5,553 +5,253 @@
 \usepackage{booktabs}
 
 \definecolor{bg}{HTML}{FFFFFF}
-\definecolor{textMain}{HTML}{000000}
-\definecolor{accent}{HTML}{B91C1C}
+\definecolor{txt}{HTML}{000000}
+\definecolor{ac}{HTML}{B91C1C}
 
-\setbeamercolor{normal text}{fg=textMain,bg=bg}
-\setbeamercolor{frametitle}{fg=white,bg=accent}
-\setbeamercolor{title}{fg=textMain,bg=bg}
+\setbeamercolor{normal text}{fg=txt,bg=bg}
+\setbeamercolor{frametitle}{fg=white,bg=ac}
 \setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{frametitle}{\vspace{0.4cm}\textbf{\insertframetitle}\par}
 
-\title{Font Catalog}
-\subtitle{BeamerForge Typography Reference}
-\date{}
-
-% Helper to show a font sample or fallback note
-\newcommand{\fontslide}[3]{%
+\newcommand{\frow}[1]{%
   \IfFontExistsTF{#1}{%
-    \fontspec{#1}%
-    \begin{frame}{#2: #1}
-      \textbf{Family:} #1 \hfill \textit{#3}
-
-      \vspace{0.3cm}
-      {\Large The quick brown fox jumps over the lazy dog.}
-
-      \vspace{0.2cm}
-      \textbf{The quick brown fox jumps over the lazy dog.}
-
-      \vspace{0.2cm}
-      \textit{The quick brown fox jumps over the lazy dog.}
-    \end{frame}
-  }{}%
-}
-
-\newcommand{\fontslideitem}[4]{%
-  \IfFontExistsTF{#1}{%
-    \fontspec{#1}%
-    \begin{frame}{#2: #1}
-      \textbf{Family:} #1 \hfill \textit{#3}
-
-      \vspace{0.3cm}
-      {\Large The quick brown fox jumps over the lazy dog.}
-
-      \vspace{0.2cm}
-      \textbf{The quick brown fox jumps over the lazy dog.}
-
-      \vspace{0.2cm}
-      \textit{The quick brown fox jumps over the lazy dog.}
-
-      \vspace{0.3cm}
-      \begin{itemize}
-        #4
-      \end{itemize}
-    \end{frame}
-  }{}%
+    \fontspec{#1}\makebox[3.2cm][l]{\tiny\bfseries #1}\hspace{0.2cm}%
+    \makebox[6.5cm][l]{The quick brown fox jumps over the lazy dog.}\\[0.22cm]%
+  }{\makebox[3.2cm][l]{\tiny\textcolor{gray}{#1 (N/A)}}\\[0.22cm]}%
 }
 
 \begin{document}
 
 % ============================================================
-% 1. Neutral UI Sans
-% ============================================================
-\section{Neutral UI Sans}
-
-\fontslideitem{Inter}{Neutral UI Sans}{system}{%
-  \item Modern, clean, strong UI presence
-  \item Great for apps, dashboards, PPT}
-\fontslideitem{Roboto}{Neutral UI Sans}{system}{%
-  \item Google/Android style, neutral and stable
-  \item App body text, mobile content}
-\fontslideitem{Open Sans}{Neutral UI Sans}{system}{%
-  \item Friendly, open, highly readable
-  \item Websites, reports, educational materials}
-\fontslideitem{Noto Sans}{Neutral UI Sans}{system}{%
-  \item Stable, strong multilingual support
-  \item International sites, formal documents}
-\fontslideitem{Source Sans 3}{Neutral UI Sans}{system}{%
-  \item Professional, clean
-  \item Reports, research presentations, product UI}
+\begin{frame}{1. Neutral UI Sans}
+\vspace{-0.3cm}\scriptsize
+\frow{Inter} \frow{Roboto} \frow{Open Sans}
+\frow{Noto Sans} \frow{Source Sans 3} \frow{IBM Plex Sans}
+\frow{Public Sans} \frow{Lato} \frow{DM Sans}
+\frow{Manrope} \frow{Work Sans}
+\end{frame}
 
 % ============================================================
-% 2. Neo-grotesque Sans
-% ============================================================
-\section{Neo-grotesque}
-
-\fontslideitem{Helvetica}{Neo-grotesque}{system (if licensed)}{%
-  \item Classic, neutral, modernist icon
-  \item Branding, logos, corporate identity}
-\fontslideitem{Arial}{Neo-grotesque}{system default}{%
-  \item System default, practical
-  \item Office docs, compatibility}
-\fontslideitem{Space Grotesk}{Neo-grotesque}{Google Fonts}{%
-  \item Tech-forward, design-conscious
-  \item Headlines, tech branding}
-\fontslideitem{Archivo}{Neo-grotesque}{Google Fonts}{%
-  \item News/information system feel
-  \item Reports, databases, news sites}
+\begin{frame}{2. Neo-grotesque}
+\vspace{-0.3cm}\scriptsize
+\frow{Helvetica} \frow{Arial} \frow{Space Grotesk}
+\frow{Archivo} \frow{Mona Sans} \frow{Hubot Sans}
+\end{frame}
 
 % ============================================================
-% 3. Humanist Sans
-% ============================================================
-\section{Humanist Sans}
-
-\fontslideitem{Fira Sans}{Humanist Sans}{system / TeX Live}{%
-  \item Mozilla style, clear and modern
-  \item Tech docs, UI, body text}
-\fontslideitem{Lato}{Humanist Sans}{Google Fonts}{%
-  \item Warm, professional, approachable
-  \item Education, consulting, business}
-\fontslideitem{Cabin}{Humanist Sans}{Google Fonts}{%
-  \item Humanist but modern
-  \item Websites, apps}
-\fontslideitem{Alegreya Sans}{Humanist Sans}{Google Fonts}{%
-  \item Literary, humanist, bookish
-  \item Culture, publishing, education}
+\begin{frame}{3. Humanist Sans}
+\vspace{-0.3cm}\scriptsize
+\frow{Fira Sans} \frow{Lato} \frow{Cabin}
+\frow{Alegreya Sans} \frow{PT Sans} \frow{Ubuntu}
+\frow{Hind} \frow{Mulish} \frow{Karla}
+\end{frame}
 
 % ============================================================
-% 4. Geometric Sans
-% ============================================================
-\section{Geometric Sans}
-
-\fontslideitem{Futura}{Geometric Sans}{system (if licensed)}{%
-  \item Classic geometric modernist
-  \item Branding, posters, headlines}
-\fontslideitem{Montserrat}{Geometric Sans}{Google Fonts}{%
-  \item Urban, modern, strong headlines
-  \item PPT titles, branding, posters}
-\fontslideitem{Poppins}{Geometric Sans}{Google Fonts}{%
-  \item Round, youthful, international
-  \item Startups, web headlines}
-\fontslideitem{Raleway}{Geometric Sans}{Google Fonts}{%
-  \item Elegant, light
-  \item Portfolios, fashion, titles}
-\fontslideitem{Jost}{Geometric Sans}{Google Fonts}{%
-  \item Close to Futura style
-  \item Branding, titles, design projects}
-\fontslideitem{Lexend}{Geometric Sans}{Google Fonts}{%
-  \item Clear, reading-friendly
-  \item Education, accessibility}
+\begin{frame}{4. Geometric Sans}
+\vspace{-0.3cm}\scriptsize
+\frow{Futura} \frow{Montserrat} \frow{Poppins}
+\frow{Raleway} \frow{Jost} \frow{Outfit}
+\frow{Urbanist} \frow{Questrial} \frow{Josefin Sans}
+\frow{Sora} \frow{Lexend} \frow{Exo 2}
+\end{frame}
 
 % ============================================================
-% 5. Condensed / Narrow Sans
-% ============================================================
-\section{Condensed / Narrow}
-
-\fontslideitem{Roboto Condensed}{Condensed / Narrow}{Google Fonts}{%
-  \item Practical, clear
-  \item Charts, report headlines}
-\fontslideitem{Oswald}{Condensed / Narrow}{Google Fonts}{%
-  \item News headline feel, bold
-  \item Posters, PPT titles}
-\fontslideitem{Bebas Neue}{Condensed / Narrow}{Google Fonts}{%
-  \item Classic tall poster font
-  \item Covers, video titles}
-\fontslideitem{Fira Sans Condensed}{Condensed / Narrow}{Google Fonts}{%
-  \item Clear, technical document feel
-  \item Reports, spec pages}
+\begin{frame}{5. Condensed / Narrow}
+\vspace{-0.3cm}\scriptsize
+\frow{Roboto Condensed} \frow{Oswald} \frow{Archivo Narrow}
+\frow{Barlow Condensed} \frow{Fira Sans Condensed} \frow{Bebas Neue}
+\frow{Teko} \frow{Antonio} \frow{Fjalla One}
+\end{frame}
 
 % ============================================================
-% 6. Rounded Sans
-% ============================================================
-\section{Rounded Sans}
-
-\fontslideitem{Nunito}{Rounded Sans}{Google Fonts}{%
-  \item Rounded, stable
-  \item Education, apps, websites}
-\fontslideitem{Rubik}{Rounded Sans}{Google Fonts}{%
-  \item Rounded but modern
-  \item Tech, lifestyle brands}
-\fontslideitem{Fredoka}{Rounded Sans}{Google Fonts}{%
-  \item Lively, soft
-  \item Children, games, consumer brands}
-\fontslideitem{Varela Round}{Rounded Sans}{Google Fonts}{%
-  \item Simple, friendly
-  \item Apps, web}
+\begin{frame}{6. Rounded Sans}
+\vspace{-0.3cm}\scriptsize
+\frow{Nunito} \frow{Nunito Sans} \frow{Rubik}
+\frow{Fredoka} \frow{Varela Round} \frow{Quicksand}
+\frow{Comfortaa} \frow{Baloo 2} \frow{Dosis}
+\end{frame}
 
 % ============================================================
-% 7. Old Style / Humanist Serif
-% ============================================================
-\section{Old Style Serif}
-
-\fontslideitem{EB Garamond}{Old Style Serif}{Google Fonts}{%
-  \item Free Garamond style
-  \item Books, long text, academic}
-\fontslideitem{Crimson Text}{Old Style Serif}{Google Fonts}{%
-  \item Bookish, traditional
-  \item Papers, literature, body text}
-\fontslideitem{Alegreya}{Old Style Serif}{Google Fonts}{%
-  \item Humanist, dynamic, readable
-  \item Books, essays, long text}
-\fontslideitem{Vollkorn}{Old Style Serif}{Google Fonts}{%
-  \item Robust, literary
-  \item Body text, publishing}
+\begin{frame}{7. Old Style / Humanist Serif}
+\vspace{-0.3cm}\scriptsize
+\frow{EB Garamond} \frow{Crimson Text} \frow{Garamond}
+\frow{Alegreya} \frow{Vollkorn} \frow{Cardo}
+\frow{IM Fell English}
+\end{frame}
 
 % ============================================================
-% 8. Transitional Serif
-% ============================================================
-\section{Transitional Serif}
-
-\fontslideitem{Georgia}{Transitional Serif}{system}{%
-  \item Screen reading classic
-  \item Web body text, formal docs}
-\fontslideitem{Times New Roman}{Transitional Serif}{system}{%
-  \item Traditional, academic, newspaper feel
-  \item Papers, formal documents}
-\fontslideitem{Merriweather}{Transitional Serif}{Google Fonts}{%
-  \item Robust, screen-readable
-  \item Long-form websites, reports}
-\fontslideitem{Lora}{Transitional Serif}{Google Fonts}{%
-  \item Modern literary feel
-  \item Blogs, stories, articles}
+\begin{frame}{8. Transitional Serif}
+\vspace{-0.3cm}\scriptsize
+\frow{Georgia} \frow{Times New Roman} \frow{Merriweather}
+\frow{Lora} \frow{PT Serif} \frow{Tinos}
+\frow{Domine} \frow{Bitter}
+\end{frame}
 
 % ============================================================
-% 9. Modern Serif / Didone
-% ============================================================
-\section{Modern Serif / Didone}
-
-\fontslideitem{Playfair Display}{Modern Serif}{Google Fonts}{%
-  \item High contrast, elegant
-  \item Titles, blog covers, branding}
-\fontslideitem{Abril Fatface}{Modern Serif}{Google Fonts}{%
-  \item Bold high contrast
-  \item Posters, large titles}
-\fontslideitem{Prata}{Modern Serif}{Google Fonts}{%
-  \item Refined, fashionable
-  \item Titles, logos}
+\begin{frame}{9. Modern Serif / Didone}
+\vspace{-0.3cm}\scriptsize
+\frow{Playfair Display} \frow{Abril Fatface} \frow{Prata}
+\frow{DM Serif Display} \frow{Italiana} \frow{Yeseva One}
+\frow{Cormorant Upright}
+\end{frame}
 
 % ============================================================
-% 10. Slab Serif
-% ============================================================
-\section{Slab Serif}
-
-\fontslideitem{Roboto Slab}{Slab Serif}{Google Fonts}{%
-  \item Modern, screen-friendly
-  \item Titles, reports, body}
-\fontslideitem{Arvo}{Slab Serif}{Google Fonts}{%
-  \item Geometric slab, bold
-  \item Titles, posters}
-\fontslideitem{Alfa Slab One}{Slab Serif}{Google Fonts}{%
-  \item Extra bold, vintage advertising
-  \item Posters, logos}
-\fontslideitem{Bitter}{Slab Serif}{Google Fonts}{%
-  \item Screen-friendly slab
-  \item Web body, blogs}
+\begin{frame}{10. Slab Serif}
+\vspace{-0.3cm}\scriptsize
+\frow{Roboto Slab} \frow{Arvo} \frow{Alfa Slab One}
+\frow{Bitter} \frow{Zilla Slab} \frow{Ultra}
+\frow{Bevan} \frow{Rokkitt}
+\end{frame}
 
 % ============================================================
-% 11. Contemporary Book / Editorial Serif
-% ============================================================
-\section{Editorial Serif}
-
-\fontslideitem{Source Serif 4}{Editorial Serif}{Google Fonts}{%
-  \item Professional, modern, publication-grade
-  \item Reports, papers, long text}
-\fontslideitem{Noto Serif}{Editorial Serif}{Google Fonts}{%
-  \item Stable, multilingual
-  \item International docs, reports}
-\fontslideitem{Literata}{Editorial Serif}{Google Fonts}{%
-  \item E-book, literary, screen reading
-  \item E-books, long text}
-\fontslideitem{Spectral}{Editorial Serif}{Google Fonts}{%
-  \item Literary, refined
-  \item Articles, cultural projects}
+\begin{frame}{11. Editorial / Book Serif}
+\vspace{-0.3cm}\scriptsize
+\frow{Source Serif 4} \frow{Noto Serif} \frow{Literata}
+\frow{Spectral} \frow{IBM Plex Serif} \frow{Newsreader} \frow{Fraunces}
+\end{frame}
 
 % ============================================================
-% 12. Clean Code Mono
-% ============================================================
-\section{Code Monospace}
-
-\fontslideitem{Fira Code}{Code Mono}{Google Fonts}{%
-  \item Ligatures, developer favorite
-  \item Code editors, tech docs}
-\fontslideitem{Source Code Pro}{Code Mono}{Google Fonts}{%
-  \item Adobe open-source, professional
-  \item Docs, IDEs}
-\fontslideitem{Roboto Mono}{Code Mono}{Google Fonts}{%
-  \item Google/Android style
-  \item Tech docs, UI}
-\fontslideitem{Inconsolata}{Code Mono}{Google Fonts}{%
-  \item Classic programmer font
-  \item Code, terminals}
-\fontslideitem{Ubuntu Mono}{Code Mono}{Google Fonts}{%
-  \item Open-source community feel
-  \item Terminal, code}
+\begin{frame}{12. Clean Code Mono}
+\vspace{-0.3cm}\scriptsize
+\frow{Fira Code} \frow{Source Code Pro} \frow{IBM Plex Mono}
+\frow{Roboto Mono} \frow{Noto Sans Mono} \frow{Ubuntu Mono}
+\frow{Inconsolata} \frow{Space Mono} \frow{DM Mono}
+\end{frame}
 
 % ============================================================
-% 13. Typewriter / Retro Mono
-% ============================================================
-\section{Typewriter Mono}
-
-\fontslideitem{Courier New}{Typewriter Mono}{system}{%
-  \item Classic typewriter
-  \item Screenplays, legal docs, retro}
-\fontslideitem{Special Elite}{Typewriter Mono}{Google Fonts}{%
-  \item Aged typewriter, distressed
-  \item Vintage posters, archival feel}
-\fontslideitem{Anonymous Pro}{Typewriter Mono}{Google Fonts}{%
-  \item Programmer/typewriter hybrid
-  \item Code, terminal}
-\fontslideitem{Cutive Mono}{Typewriter Mono}{Google Fonts}{%
-  \item Typewriter but clearer
-  \item Docs, titles}
+\begin{frame}{13. Typewriter / Retro Mono}
+\vspace{-0.3cm}\scriptsize
+\frow{Courier New} \frow{Courier Prime} \frow{Special Elite}
+\frow{Cutive Mono} \frow{Anonymous Pro} \frow{Xanh Mono}
+\frow{Syne Mono}
+\end{frame}
 
 % ============================================================
-% 14. Bold Poster / Impact
-% ============================================================
-\section{Bold Poster}
-
-\fontslideitem{Anton}{Bold Poster}{Google Fonts}{%
-  \item Extremely bold headlines
-  \item Posters, video titles}
-\fontslideitem{Oswald}{Bold Poster}{Google Fonts}{%
-  \item Modern news title
-  \item PPT, web headlines}
-\fontslideitem{Archivo Black}{Bold Poster}{Google Fonts}{%
-  \item Heavy, informational
-  \item News, politics, report titles}
-\fontslideitem{Staatliches}{Bold Poster}{Google Fonts}{%
-  \item German/modernist poster feel
-  \item Posters, logos}
+\begin{frame}{14. Bold Poster / Impact}
+\vspace{-0.3cm}\scriptsize
+\frow{Anton} \frow{Bebas Neue} \frow{Archivo Black}
+\frow{Oswald} \frow{Staatliches} \frow{Black Ops One}
+\frow{Bungee} \frow{Luckiest Guy} \frow{Changa One}
+\end{frame}
 
 % ============================================================
-% 15. Fashion / Luxury
-% ============================================================
-\section{Fashion \& Luxury}
-
-\fontslideitem{Playfair Display}{Fashion / Luxury}{Google Fonts}{%
-  \item High-end, fashion, literary
-  \item Magazine titles, branding}
-\fontslideitem{Cinzel}{Fashion / Luxury}{Google Fonts}{%
-  \item Roman inscription, regal
-  \item History, museums, luxury}
-\fontslideitem{Marcellus}{Fashion / Luxury}{Google Fonts}{%
-  \item Classical, refined
-  \item Branding, titles}
-\fontslideitem{Italiana}{Fashion / Luxury}{Google Fonts}{%
-  \item Thin, elegant
-  \item Fashion, art titles}
+\begin{frame}{15. Fashion / Luxury}
+\vspace{-0.3cm}\scriptsize
+\frow{Playfair Display} \frow{Bodoni Moda} \frow{Prata}
+\frow{DM Serif Display} \frow{Cinzel} \frow{Marcellus}
+\frow{Italiana} \frow{Yeseva One} \frow{Libre Bodoni}
+\end{frame}
 
 % ============================================================
-% 16. Tech / Futuristic
-% ============================================================
-\section{Tech / Futuristic}
-
-\fontslideitem{Orbitron}{Tech / Futuristic}{Google Fonts}{%
-  \item Sci-fi, digital dashboard
-  \item AI, gaming, sci-fi}
-\fontslideitem{Exo 2}{Tech / Futuristic}{Google Fonts}{%
-  \item Futuristic, mechanical but readable
-  \item Tech sites, gaming}
-\fontslideitem{Space Grotesk}{Tech / Futuristic}{Google Fonts}{%
-  \item Tech-forward, design-conscious
-  \item AI, product, websites}
-\fontslideitem{Rajdhani}{Tech / Futuristic}{Google Fonts}{%
-  \item Indian tech feel, narrow
-  \item Dashboards, titles}
+\begin{frame}{16. Tech / Futuristic}
+\vspace{-0.3cm}\scriptsize
+\frow{Orbitron} \frow{Exo 2} \frow{Rajdhani}
+\frow{Space Grotesk} \frow{Sora} \frow{Tomorrow}
+\frow{Zen Dots} \frow{Share Tech Mono} \frow{Audiowide}
+\end{frame}
 
 % ============================================================
-% 17. Vintage / Retro
-% ============================================================
-\section{Vintage / Retro}
-
-\fontslideitem{Lobster}{Vintage / Retro}{Google Fonts}{%
-  \item Vintage signage, restaurant feel
-  \item Food, music, posters}
-\fontslideitem{Pacifico}{Vintage / Retro}{Google Fonts}{%
-  \item California surf, retro cursive
-  \item Lifestyle, travel}
-\fontslideitem{Limelight}{Vintage / Retro}{Google Fonts}{%
-  \item 1920s theatre feel
-  \item Film, bars, events}
-\fontslideitem{Monoton}{Vintage / Retro}{Google Fonts}{%
-  \item Neon, 70s
-  \item Music, nightlife}
+\begin{frame}{17. Vintage / Retro}
+\vspace{-0.3cm}\scriptsize
+\frow{Lobster} \frow{Pacifico} \frow{Limelight}
+\frow{Monoton} \frow{Rye} \frow{Smokum}
+\frow{Fascinate} \frow{Ultra} \frow{Special Elite}
+\end{frame}
 
 % ============================================================
-% 18. Playful / Comic / Kids
-% ============================================================
-\section{Playful / Comic}
-
-\fontslideitem{Comic Neue}{Playful}{Google Fonts}{%
-  \item Improved Comic Sans
-  \item Casual notes, education}
-\fontslideitem{Fredoka}{Playful}{Google Fonts}{%
-  \item Rounded, lively
-  \item Children, games}
-\fontslideitem{Balsamiq Sans}{Playful}{Google Fonts}{%
-  \item Hand-drawn wireframe feel
-  \item Product sketches, education}
-\fontslideitem{Chewy}{Playful}{Google Fonts}{%
-  \item Cartoon, candy-like
-  \item Food, children}
+\begin{frame}{18. Playful / Comic / Kids}
+\vspace{-0.3cm}\scriptsize
+\frow{Comic Neue} \frow{Balsamiq Sans} \frow{Fredoka}
+\frow{Chewy} \frow{Luckiest Guy} \frow{Boogaloo}
+\frow{Cherry Bomb One} \frow{Patrick Hand} \frow{Short Stack}
+\end{frame}
 
 % ============================================================
-% 19. Elegant Script
-% ============================================================
-\section{Elegant Script}
-
-\fontslideitem{Great Vibes}{Elegant Script}{Google Fonts}{%
-  \item Wedding, ornate
-  \item Invitations, logos}
-\fontslideitem{Dancing Script}{Elegant Script}{Google Fonts}{%
-  \item Friendly, flowing
-  \item Social media, blog titles}
-\fontslideitem{Allura}{Elegant Script}{Google Fonts}{%
-  \item Elegant, light
-  \item Weddings, feminine brands}
-\fontslideitem{Pacifico}{Elegant Script}{Google Fonts}{%
-  \item Retro sign painting
-  \item Food, lifestyle}
+\begin{frame}{19. Elegant Script}
+\vspace{-0.3cm}\scriptsize
+\frow{Great Vibes} \frow{Allura} \frow{Parisienne}
+\frow{Alex Brush} \frow{Dancing Script} \frow{Sacramento}
+\frow{Tangerine} \frow{Pinyon Script} \frow{Rouge Script}
+\end{frame}
 
 % ============================================================
-% 20. Casual Handwriting
-% ============================================================
-\section{Casual Handwriting}
-
-\fontslideitem{Caveat}{Casual Handwriting}{Google Fonts}{%
-  \item Natural handwriting, clear
-  \item Notes, PPT annotations}
-\fontslideitem{Indie Flower}{Casual Handwriting}{Google Fonts}{%
-  \item Casual, personal
-  \item Blogs, cards}
-\fontslideitem{Permanent Marker}{Casual Handwriting}{Google Fonts}{%
-  \item Marker pen, street feel
-  \item Posters, music}
-\fontslideitem{Patrick Hand}{Casual Handwriting}{Google Fonts}{%
-  \item Comic handwriting
-  \item Teaching, notes}
+\begin{frame}{20. Casual Handwriting}
+\vspace{-0.3cm}\scriptsize
+\frow{Caveat} \frow{Kalam} \frow{Patrick Hand}
+\frow{Indie Flower} \frow{Shadows Into Light} \frow{Permanent Marker}
+\frow{Gloria Hallelujah} \frow{Architects Daughter}
+\frow{Reenie Beanie} \frow{Homemade Apple}
+\end{frame}
 
 % ============================================================
-% 21. Brush / Sign Painting
-% ============================================================
-\section{Brush \& Sign}
-
-\fontslideitem{Satisfy}{Brush/Sign}{Google Fonts}{%
-  \item Soft, friendly
-  \item Lifestyle, titles}
-\fontslideitem{Yellowtail}{Brush/Sign}{Google Fonts}{%
-  \item Old sign painting
-  \item Food, bars}
-\fontslideitem{Courgette}{Brush/Sign}{Google Fonts}{%
-  \item Gentle, rounded
-  \item Feminine brands, food}
-\fontslideitem{Kaushan Script}{Brush/Sign}{Google Fonts}{%
-  \item Rough, handwritten
-  \item Outdoor, events}
+\begin{frame}{21. Brush / Sign Painting}
+\vspace{-0.3cm}\scriptsize
+\frow{Pacifico} \frow{Lobster} \frow{Satisfy}
+\frow{Yellowtail} \frow{Kaushan Script} \frow{Oleo Script}
+\frow{Merienda} \frow{Courgette} \frow{Damion} \frow{Norican}
+\end{frame}
 
 % ============================================================
-% 22. Blackletter / Gothic
-% ============================================================
-\section{Blackletter}
-
-\fontslideitem{UnifrakturMaguntia}{Blackletter}{Google Fonts}{%
-  \item German blackletter, traditional
-  \item History, metal music}
-\fontslideitem{Pirata One}{Blackletter}{Google Fonts}{%
-  \item Pirate, blackletter
-  \item Gaming, alcohol labels}
-\fontslideitem{New Rocker}{Blackletter}{Google Fonts}{%
-  \item Metal, rock
-  \item Music posters}
+\begin{frame}{22. Blackletter / Gothic}
+\vspace{-0.3cm}\scriptsize
+\frow{UnifrakturMaguntia} \frow{Pirata One} \frow{New Rocker}
+\frow{MedievalSharp} \frow{Grenze Gotisch}
+\end{frame}
 
 % ============================================================
-% 23. Academic / Research
-% ============================================================
-\section{Academic / Research}
-
-\fontslideitem{Source Serif 4}{Academic}{Google Fonts}{%
-  \item Modern academic, clear
-  \item Report body text}
-\fontslideitem{Noto Serif}{Academic}{Google Fonts}{%
-  \item Formal, multilingual
-  \item Papers, reports}
-\fontslideitem{Merriweather}{Academic}{Google Fonts}{%
-  \item Screen-friendly serif
-  \item Long text, blogs}
-\fontslideitem{Latin Modern Roman}{Academic}{TeX default}{%
-  \item LaTeX modern reference
-  \item Academic publishing}
-\fontslideitem{STIX Two Text}{Academic}{Google Fonts}{%
-  \item Math, scientific publishing
-  \item Papers with formulas}
+\begin{frame}{23. Academic / Research}
+\vspace{-0.3cm}\scriptsize
+\frow{Source Serif 4} \frow{Noto Serif} \frow{Literata}
+\frow{Merriweather} \frow{Libre Baskerville} \frow{IBM Plex Serif}
+\frow{Latin Modern Roman} \frow{STIX Two Text}
+\end{frame}
 
 % ============================================================
-% 24. Data / Dashboard / Finance
-% ============================================================
-\section{Data / Finance}
-
-\fontslideitem{Inter}{Data / Finance}{Google Fonts}{%
-  \item Clear, modern
-  \item Dashboards, charts}
-\fontslideitem{Roboto}{Data / Finance}{Google Fonts}{%
-  \item Neutral, screen-friendly
-  \item Apps, backend}
-\fontslideitem{IBM Plex Sans}{Data / Finance}{Google Fonts}{%
-  \item Enterprise, tech, financial feel
-  \item Financial reports}
-\fontslideitem{Roboto Condensed}{Data / Finance}{Google Fonts}{%
-  \item Space-saving
-  \item Chart labels}
-\fontslideitem{Source Sans 3}{Data / Finance}{Google Fonts}{%
-  \item Professional, clear
-  \item Chart captions}
+\begin{frame}{24. Data / Dashboard / Finance}
+\vspace{-0.3cm}\scriptsize
+\frow{Inter} \frow{Roboto} \frow{IBM Plex Sans}
+\frow{Source Sans 3} \frow{Public Sans} \frow{Noto Sans}
+\frow{Roboto Condensed} \frow{Archivo Narrow}
+\frow{Atkinson Hyperlegible} \frow{Space Mono}
+\end{frame}
 
 % ============================================================
-\section{Cheatsheet}
-% ============================================================
-
-\begin{frame}{Font Cheatsheet by Category}
-  \centering
-  \tiny
-  \begin{tabular}{l l l}
-    \toprule
-    \textbf{Category} & \textbf{Top Picks} & \textbf{Use Case} \\
-    \midrule
-    Neutral UI Sans & Inter, Roboto, Open Sans & Apps, web, dashboards \\
-    Neo-grotesque & Helvetica, Space Grotesk & Branding, corporate \\
-    Humanist Sans & Fira Sans, Lato, Cabin & Education, consulting \\
-    Geometric Sans & Montserrat, Poppins, Raleway & PPT titles, branding \\
-    Condensed Narrow & Oswald, Bebas Neue, Roboto Condensed & Posters, charts \\
-    Rounded Sans & Nunito, Rubik, Fredoka & Education, kids, lifestyle \\
-    \midrule
-    Old Style Serif & EB Garamond, Crimson Text & Books, long text \\
-    Transitional Serif & Georgia, Merriweather, Lora & Web, reports \\
-    Modern/Didone & Playfair Display, Abril Fatface & Fashion, luxury titles \\
-    Slab Serif & Roboto Slab, Arvo, Bitter & Headlines, blogs \\
-    Editorial Serif & Source Serif 4, Noto Serif, Spectral & Reports, papers \\
-    \midrule
-    Code Mono & Fira Code, Source Code Pro & Code, tech docs \\
-    Typewriter Mono & Courier New, Special Elite & Screenplays, retro \\
-    \midrule
-    Bold Poster & Anton, Oswald, Archivo Black & Posters, video titles \\
-    Fashion/Luxury & Playfair Display, Cinzel & Magazines, high-end \\
-    Tech/Futuristic & Orbitron, Exo 2 & AI, gaming, sci-fi \\
-    Vintage/Retro & Lobster, Pacifico, Limelight & Food, music, events \\
-    Playful/Comic & Comic Neue, Fredoka & Kids, education \\
-    \midrule
-    Elegant Script & Great Vibes, Dancing Script & Invitations, logos \\
-    Casual Handwrite & Caveat, Indie Flower & Notes, blogs \\
-    Brush/Sign & Satisfy, Yellowtail & Food, lifestyle \\
-    Blackletter & UnifrakturMaguntia & History, metal music \\
-    \midrule
-    Academic & Source Serif 4, Latin Modern & Papers, reports \\
-    Data/Finance & Inter, IBM Plex Sans & Dashboards, charts \\
-    \bottomrule
-  \end{tabular}
-
-  \vspace{0.2cm}
-  \footnotesize
-  All fonts available on Google Fonts (free, open-source).\\
-  System fonts (Helvetica, Georgia, Times New Roman) are platform-dependent.
+\begin{frame}{Quick Reference}
+\tiny
+\begin{tabular}{p{3cm} p{7.5cm}}
+\toprule
+\textbf{Category} & \textbf{Best For}\\
+\midrule
+Neutral UI Sans & Dashboards, apps, web UI, PPT body\\
+Neo-grotesque & Corporate branding, formal identity\\
+Humanist Sans & Education, consulting, long reading\\
+Geometric Sans & PPT titles, posters, startup brands\\
+Condensed/Narrow & Charts, space-tight titles, posters\\
+Rounded Sans & Education, kids, friendly brands\\
+\midrule
+Old Style Serif & Books, literature, academic monographs\\
+Transitional Serif & Web body, reports, formal documents\\
+Modern/Didone & Fashion, luxury, magazine titles (not body)\\
+Slab Serif & Headlines, posters, industrial/retro\\
+Editorial Serif & Modern reports, papers, e-books\\
+\midrule
+Code Mono & Code blocks, tech docs, terminals\\
+Typewriter Mono & Screenplays, retro docs\\
+\midrule
+Bold Poster & Event posters, video titles, hero text\\
+Fashion/Luxury & High-end brand headers, editorial\\
+Tech/Futuristic & AI, gaming, sci-fi conference\\
+Vintage/Retro & Food, bars, music, themed events\\
+Playful/Comic & Kids, education, casual comms\\
+\midrule
+Elegant Script & Wedding invites, luxury logos\\
+Casual Handwriting & PPT annotations, personal notes\\
+Brush/Sign & Restaurant logos, lifestyle brands\\
+Blackletter & Metal music, medieval themes\\
+Academic & Papers, theses, grant proposals\\
+Data/Finance & Financial reports, dashboards, tables\\
+\bottomrule
+\end{tabular}
 \end{frame}
 
 \end{document}
