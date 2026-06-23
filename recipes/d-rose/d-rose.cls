@@ -72,9 +72,9 @@
 % Beamer colors and navigation
 \setbeamercolor*{normal text}{fg=normalTextColor,bg=bodyColor}
 \setbeamercolor*{structure}{fg=redblack}
-\setbeamercolor{titlelike}{fg=redblack,bg={}}
+\setbeamercolor{titlelike}{fg=redblack,bg=titleColor}
 \setbeamercolor{frametitle}{fg=redblack,bg=bodyColor}
-\setbeamercolor{title}{fg=redblack,bg={}}
+\setbeamercolor{title}{fg=redblack,bg=titleColor}
 \setbeamercolor*{example text}{fg=redblack}
 \setbeamercolor*{alerted text}{fg=alertTextColor}
 \setbeamercolor{itemize item}{fg=redblack}
@@ -118,34 +118,6 @@
 \setbeamercolor{institute}{fg=titleTextColor}
 \setbeamercolor{date}{fg=titleTextColor}
 \captionsetup{font=footnotesize,labelfont=bf}
-
-% Title page — transparent bg, allows background image through
-\IfFileExists{fig/hkskyline.png}{%
-  \newcommand\drosehasskyline{yes}%
-}{}
-
-\setbeamertemplate{title page}{%
-  \vspace{1.5cm}
-  \begin{beamercolorbox}[sep=8pt,center,wd=\paperwidth]{title}
-    \usebeamerfont{title}\inserttitle\par
-    \ifx\insertsubtitle\@empty\else
-      \vspace{0.3cm}
-      {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle}\par
-    \fi
-    \vspace{0.8cm}
-    {\usebeamerfont{author}\insertauthor}\par
-    \vspace{0.2cm}
-    {\usebeamerfont{institute}\insertinstitute}\par
-    \vspace{0.2cm}
-    {\usebeamerfont{date}\insertdate}\par
-  \end{beamercolorbox}%
-  \ifdefined\drosehasskyline
-    \begin{tikzpicture}[remember picture,overlay]
-      \node[anchor=south] at (current page.south)
-        {\includegraphics[width=\paperwidth]{fig/hkskyline.png}};
-    \end{tikzpicture}%
-  \fi
-}
 
 \tikzset{
   every node/.style={font=\usebeamerfont{normal text}\selectfont,text=normal text.fg}

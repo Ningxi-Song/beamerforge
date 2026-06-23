@@ -9,12 +9,26 @@
 \institute[]{Institution Name}
 \date{}
 
+\IfFileExists{fig/hkskyline.png}{%
+  \newcommand\hasSkyline{yes}%
+}{}
+
 \begin{document}
 
+{%
+\ifdefined\hasSkyline
+  \usebackgroundtemplate{%
+    \begin{tikzpicture}[remember picture,overlay]
+      \node[anchor=south] at (current page.south)
+        {\includegraphics[width=\paperwidth]{fig/hkskyline.png}};
+    \end{tikzpicture}%
+  }
+\fi
 \begin{frame}[plain]
   \vspace{-1cm}
   \titlepage
 \end{frame}
+}
 
 \input{content/overview}
 \input{content/figures}
