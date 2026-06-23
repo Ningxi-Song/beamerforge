@@ -2,7 +2,7 @@
 
 > *In the midst of oppression, we bloom.*
 
-![D Rose Logo](fig/derrick-rose-seeklogo.png)
+<img src="fig/derrick-rose-seeklogo.png" width="180" alt="D Rose Logo">
 
 ## Inspiration
 
