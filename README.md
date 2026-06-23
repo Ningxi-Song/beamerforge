@@ -53,7 +53,7 @@ beamer-design-system/
 │
 ├── elements/                 # Design element catalog
 │   ├── colors/               # Color themes, palettes, gradients
-│   ├── typography/           # Font families, sizes, spacing
+│   ├── fonts/              # Font families, sizes, spacing
 │   ├── layout/               # Page geometry, columns, grids
 │   ├── frames/               # Title page, section page, summary page
 │   ├── navigation/           # Headers, footers, page numbers
