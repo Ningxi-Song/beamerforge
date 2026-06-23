@@ -19,7 +19,7 @@
 \ifdefined\hasSkyline
   \usebackgroundtemplate{%
     \begin{tikzpicture}[remember picture,overlay]
-      \node[anchor=south] at (current page.south)
+      \node[anchor=north, yshift=-2.5cm] at (current page.south)
         {\includegraphics[width=\paperwidth]{fig/hkskyline.png}};
     \end{tikzpicture}%
   }
