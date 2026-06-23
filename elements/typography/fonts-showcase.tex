@@ -1,0 +1,264 @@
+\documentclass[10pt]{beamer}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{booktabs}
+
+\definecolor{bg}{HTML}{FFFFFF}
+\definecolor{textMain}{HTML}{000000}
+\definecolor{accent}{HTML}{B91C1C}
+
+\setbeamercolor{normal text}{fg=textMain,bg=bg}
+\setbeamercolor{frametitle}{fg=white,bg=accent}
+\setbeamercolor{title}{fg=textMain,bg=bg}
+\setbeamertemplate{navigation symbols}{}
+
+\title{Font Catalog}
+\subtitle{BeamerForge Typography Reference}
+\date{}
+
+\begin{document}
+
+% ============================================================
+\section{Serif Fonts}
+% ============================================================
+
+% --- Neuton (bundled) ---
+\setmainfont[
+  Path = ../../recipes/d-rose/font/,
+  UprightFont = Neuton-Regular.ttf,
+  ItalicFont = Neuton-Italic.ttf,
+  BoldFont = Neuton-ExtraBold.ttf
+]{Neuton}
+
+\begin{frame}{Serif: Neuton}
+  \textbf{Family:} Neuton \hfill \textit{Bundled in repo}
+
+  \vspace{0.3cm}
+  {\Large The quick brown fox jumps over the lazy dog.}
+
+  \vspace{0.2cm}
+  \textbf{The quick brown fox jumps over the lazy dog.}
+
+  \vspace{0.2cm}
+  \textit{The quick brown fox jumps over the lazy dog.}
+
+  \vspace{0.3cm}
+  \begin{itemize}
+    \item A transitional serif with moderate contrast
+    \item Good for academic presentations
+    \item Reads well at all sizes
+  \end{itemize}
+\end{frame}
+
+% --- Latin Modern Roman ---
+\setmainfont{Latin Modern Roman}
+
+\begin{frame}{Serif: Latin Modern Roman}
+  \textbf{Family:} Latin Modern Roman \hfill \textit{TeX Live default}
+
+  \vspace{0.3cm}
+  {\Large The quick brown fox jumps over the lazy dog.}
+
+  \vspace{0.2cm}
+  \textbf{The quick brown fox jumps over the lazy dog.}
+
+  \vspace{0.2cm}
+  \textit{The quick brown fox jumps over the lazy dog.}
+
+  \vspace{0.3cm}
+  \begin{itemize}
+    \item Computer Modern successor; classic TeX look
+    \item Always available on any TeX installation
+    \item Clean, familiar — perhaps too familiar
+  \end{itemize}
+\end{frame}
+
+% --- EB Garamond ---
+\setmainfont{EB Garamond}
+
+\begin{frame}{Serif: EB Garamond}
+  \textbf{Family:} EB Garamond \hfill \textit{System font}
+
+  \vspace{0.3cm}
+  {\Large The quick brown fox jumps over the lazy dog.}
+
+  \vspace{0.2cm}
+  \textbf{The quick brown fox jumps over the lazy dog.}
+
+  \vspace{0.2cm}
+  \textit{The quick brown fox jumps over the lazy dog.}
+
+  \vspace{0.3cm}
+  \begin{itemize}
+    \item Elegant old-style serif, very readable
+    \item Humanist proportions, warm feel
+    \item Excellent for humanities and history talks
+  \end{itemize}
+\end{frame}
+
+% --- Crimson Pro ---
+\setmainfont{Crimson Pro}
+
+\begin{frame}{Serif: Crimson Pro}
+  \textbf{Family:} Crimson Pro \hfill \textit{Google Fonts}
+
+  \vspace{0.3cm}
+  {\Large The quick brown fox jumps over the lazy dog.}
+
+  \vspace{0.2cm}
+  \textbf{The quick brown fox jumps over the lazy dog.}
+
+  \vspace{0.2cm}
+  \textit{The quick brown fox jumps over the lazy dog.}
+
+  \vspace{0.3cm}
+  \begin{itemize}
+    \item Designed specifically for academic publishing
+    \item Six weights + italics, very versatile
+    \item Modern take on Garamond tradition
+  \end{itemize}
+\end{frame}
+
+% ============================================================
+\section{Sans-Serif Fonts}
+% ============================================================
+
+% --- Fira Sans ---
+\setmainfont{Fira Sans}
+
+\begin{frame}{Sans: Fira Sans}
+  \textbf{Family:} Fira Sans \hfill \textit{System / TeX Live}
+
+  \vspace{0.3cm}
+  {\Large The quick brown fox jumps over the lazy dog.}
+
+  \vspace{0.2cm}
+  \textbf{The quick brown fox jumps over the lazy dog.}
+
+  \vspace{0.2cm}
+  \textit{The quick brown fox jumps over the lazy dog.}
+
+  \vspace{0.3cm}
+  \begin{itemize}
+    \item Commissioned by Mozilla; modern, clean
+    \item Excellent legibility on screen
+    \item Good for tech or policy presentations
+  \end{itemize}
+\end{frame}
+
+% --- Latin Modern Sans ---
+\setmainfont{Latin Modern Sans}
+
+\begin{frame}{Sans: Latin Modern Sans}
+  \textbf{Family:} Latin Modern Sans \hfill \textit{TeX Live default}
+
+  \vspace{0.3cm}
+  {\Large The quick brown fox jumps over the lazy dog.}
+
+  \vspace{0.2cm}
+  \textbf{The quick brown fox jumps over the lazy dog.}
+
+  \vspace{0.2cm}
+  \textit{The quick brown fox jumps over the lazy dog.}
+
+  \vspace{0.3cm}
+  \begin{itemize}
+    \item Computer Modern sans-serif family
+    \item Matches Latin Modern Roman perfectly
+    \item Clean but slightly dated feel
+  \end{itemize}
+\end{frame}
+
+% --- Roboto ---
+\setmainfont{Roboto}
+
+\begin{frame}{Sans: Roboto}
+  \textbf{Family:} Roboto \hfill \textit{Google Fonts}
+
+  \vspace{0.3cm}
+  {\Large The quick brown fox jumps over the lazy dog.}
+
+  \vspace{0.2cm}
+  \textbf{The quick brown fox jumps over the lazy dog.}
+
+  \vspace{0.2cm}
+  \textit{The quick brown fox jumps over the lazy dog.}
+
+  \vspace{0.3cm}
+  \begin{itemize}
+    \item Android's system font; mechanical skeleton
+    \item Geometric forms with friendly open curves
+    \item Great for modern, clean presentations
+  \end{itemize}
+\end{frame}
+
+% ============================================================
+\section{How to Choose}
+% ============================================================
+
+\begin{frame}{How to Choose a Font}
+  \begin{columns}[T]
+    \column{0.5\textwidth}
+    \textbf{Serif fonts} feel:
+    \begin{itemize}
+      \item Academic, traditional
+      \item Authoritative, formal
+      \item Best for: humanities, history, law
+    \end{itemize}
+
+    \vspace{0.5cm}
+    \textbf{For your template:}
+    \begin{enumerate}
+      \item Pick one serif family
+      \item Pick one sans family
+      \item Decide which is primary
+      \item Bundled fonts = no dependency
+    \end{enumerate}
+
+    \column{0.5\textwidth}
+    \textbf{Sans-serif fonts} feel:
+    \begin{itemize}
+      \item Modern, clean
+      \item Technical, data-driven
+      \item Best for: economics, policy, STEM
+    \end{itemize}
+
+    \vspace{0.5cm}
+    \textbf{Quick tip:}
+    \begin{itemize}
+      \item Pair a serif heading with sans body (or vice versa)
+      \item Test at 10pt -- the real slide size
+      \item Avoid script/display fonts for body text
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% ============================================================
+\section{Quick Reference}
+% ============================================================
+
+\begin{frame}{Font Family Cheatsheet}
+  \centering
+  \small
+  \begin{tabular}{l l l l}
+    \toprule
+    \textbf{Family} & \textbf{Type} & \textbf{Availability} & \textbf{Best For} \\
+    \midrule
+    Neuton & Serif & Bundled & Academic, formal \\
+    Latin Modern Roman & Serif & TeX default & Classic TeX look \\
+    EB Garamond & Serif & System & Humanities, elegant \\
+    Crimson Pro & Serif & Google & Academic publishing \\
+    \midrule
+    Fira Sans & Sans & System/TeX & Modern, tech \\
+    Latin Modern Sans & Sans & TeX default & Clean, simple \\
+    Roboto & Sans & Google & Modern, versatile \\
+    \bottomrule
+  \end{tabular}
+
+  \vspace{0.3cm}
+  \footnotesize
+  All fonts shown with \texttt{\textbackslash setmainfont} in XeLaTeX via \texttt{fontspec}.
+\end{frame}
+
+\end{document}
