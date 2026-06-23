@@ -22,9 +22,9 @@
 \begin{document}
 
 % ============================================================
-\section{MarVoSym + Pifont}
+\section{MarVoSym}
 
-\begin{frame}{MarVoSym + Pifont}
+\begin{frame}{MarVoSym}
 \begin{columns}
 \column{0.5\textwidth}
 \textbf{MarVoSym:}
@@ -33,20 +33,133 @@
   \item \CrossedBox CrossedBox
   \item \HollowBox HollowBox
   \item \PointingHand PointingHand
+  \item \WritingHand WritingHand
   \item \Smiley Smiley
+  \item \Frowny Frowny
   \item \Lightning Lightning
-  \item \Info Info
 \end{itemize}
 
+\column{0.5\textwidth}
+\textbf{MarVoSym (cont.):}
+\begin{itemize}
+  \item \Info Info
+  \item \Email Email
+  \item \Keyboard Keyboard
+  \item \ComputerMouse Mouse
+  \item \Telefon Telefon
+  \item \ClockLogo Clock
+  \item \Sun Sun
+  \item \Heart Heart
+\end{itemize}
+\end{columns}
+\end{frame}
+
+\begin{frame}{MarVoSym: Symbols}
+\begin{columns}
+\column{0.5\textwidth}
+\textbf{MarVoSym:}
+\begin{itemize}
+  \item \PeaceDove Peace Dove
+  \item \Biohazard Biohazard
+  \item \Radioactivity Radioactivity
+  \item \YinYang Yin Yang
+  \item \Cross Cross
+  \item \CeltCross Celt Cross
+\end{itemize}
+
+\column{0.5\textwidth}
+\textbf{MarVoSym:}
+\begin{itemize}
+  \item \Ankh Ankh
+  \item \Bouquet Bouquet
+  \item \Recycling Recycling
+  \item \Moon Moon
+  \item \Bat Bat
+  \item \Wheelchair Wheelchair
+\end{itemize}
+\end{columns}
+\end{frame}
+
+% ============================================================
+\section{Pifont}
+
+\begin{frame}{Pifont: Stars + Circles}
+\begin{columns}
 \column{0.5\textwidth}
 \textbf{Pifont:}
 \begin{itemize}
   \item \ding{32} Ding 32 (Star Open)
   \item \ding{67} Ding 67 (Star Filled)
   \item \ding{70} Ding 70 (Circle)
+  \item \ding{72} Ding 72 (Square)
+  \item \ding{73} Ding 73 (Diamond)
+  \item \ding{74} Ding 74 (Cross)
+\end{itemize}
+
+\column{0.5\textwidth}
+\textbf{Pifont (cont.):}
+\begin{itemize}
   \item \ding{109} Ding 109 (Checkmark 2)
   \item \ding{110} Ding 110 (X Mark 2)
+  \item \ding{113} Ding 113 (Checkmark)
+  \item \ding{114} Ding 114 (X Mark)
   \item \ding{168} Ding 168 (Heart)
+  \item \ding{170} Ding 170 (Note)
+\end{itemize}
+\end{columns}
+\end{frame}
+
+% ============================================================
+\section{wasysym}
+
+\begin{frame}{wasysym: Faces + Nature}
+\begin{columns}
+\column{0.5\textwidth}
+\textbf{wasysym:}
+\begin{itemize}
+  \item \sun Sun
+  \item \lightning Lightning
+  \item \female Female
+  \item \male Male
+  \item \phone Phone
+  \item \clock Clock
+\end{itemize}
+
+\column{0.5\textwidth}
+\textbf{wasysym (cont.):}
+\begin{itemize}
+  \item \eighthnote Eighth Note
+  \item \twonotes Two Notes
+  \item \diameter Diameter
+  \item \invdiameter Inv Diameter
+  \item \wasylozenge Lozenge
+  \item \wasytherefore Therefore
+\end{itemize}
+\end{columns}
+\end{frame}
+
+\begin{frame}{wasysym: Shapes}
+\begin{columns}
+\column{0.5\textwidth}
+\textbf{wasysym Polygons:}
+\begin{itemize}
+  \item $\hexagon$ Hexagon
+  \item $\varhexagon$ Var Hexagon
+  \item $\pentagon$ Pentagon
+  \item $\hexstar$ Hex Star
+  \item $\varhexstar$ Var Hex Star
+  \item $\davidsstar$ David Star
+\end{itemize}
+
+\column{0.5\textwidth}
+\textbf{wasysym Circles:}
+\begin{itemize}
+  \item $\Circle$ Circle (open)
+  \item $\CIRCLE$ CIRCLE (filled)
+  \item $\Leftcircle$ Left Circle
+  \item $\Rightcircle$ Right Circle
+  \item $\LEFTCIRCLE$ LEFTCIRCLE
+  \item $\RIGHTCIRCLE$ RIGHTCIRCLE
 \end{itemize}
 \end{columns}
 \end{frame}
@@ -80,45 +193,224 @@
 \end{columns}
 \end{frame}
 
+\begin{frame}{Math: Circled Operators}
+\begin{columns}
+\column{0.5\textwidth}
+\textbf{Circled:}
+\begin{itemize}
+  \item $\ominus$ Circled minus
+  \item $\otimes$ Circled times
+  \item $\oslash$ Circled slash
+  \item $\odot$ Circled dot
+\end{itemize}
+
+\column{0.5\textwidth}
+\textbf{Boxed:}
+\begin{itemize}
+  \item $\boxdot$ Boxed dot
+  \item $\boxplus$ Boxed plus
+  \item $\boxminus$ Boxed minus
+  \item $\boxtimes$ Boxed times
+\end{itemize}
+\end{columns}
+\end{frame}
+
 % ============================================================
 \section{TikZ: Geometric Shapes}
 
-\begin{frame}{TikZ: Octagon + Decagon}
+\begin{frame}{TikZ: Polygons}
 \begin{columns}
+\column{0.5\textwidth}
+\setbeamertemplate{itemize item}{%
+  \tikz[baseline=-0.5ex] \node[regular polygon, regular polygon sides=5, fill=black, inner sep=1.5pt] {};%
+}
+\textbf{Pentagon:}
+\begin{itemize}
+  \item Five-sided
+\end{itemize}
+
+\setbeamertemplate{itemize item}{%
+  \tikz[baseline=-0.5ex] \node[regular polygon, regular polygon sides=6, fill=black, inner sep=1.5pt] {};%
+}
+\textbf{Hexagon:}
+\begin{itemize}
+  \item Six-sided
+\end{itemize}
+
+\setbeamertemplate{itemize item}{%
+  \tikz[baseline=-0.5ex] \node[regular polygon, regular polygon sides=7, fill=black, inner sep=1.5pt] {};%
+}
+\textbf{Heptagon:}
+\begin{itemize}
+  \item Seven-sided
+\end{itemize}
+
 \column{0.5\textwidth}
 \setbeamertemplate{itemize item}{%
   \tikz[baseline=-0.5ex] \node[regular polygon, regular polygon sides=8, fill=black, inner sep=1.5pt] {};%
 }
 \textbf{Octagon:}
 \begin{itemize}
-  \item Stop sign shape
-  \item Distinctive
+  \item Stop sign
 \end{itemize}
 
-\column{0.5\textwidth}
+\setbeamertemplate{itemize item}{%
+  \tikz[baseline=-0.5ex] \node[regular polygon, regular polygon sides=9, fill=black, inner sep=1.5pt] {};%
+}
+\textbf{Nonagon:}
+\begin{itemize}
+  \item Nine-sided
+\end{itemize}
+
 \setbeamertemplate{itemize item}{%
   \tikz[baseline=-0.5ex] \node[regular polygon, regular polygon sides=10, fill=black, inner sep=1.5pt] {};%
 }
 \textbf{Decagon:}
 \begin{itemize}
-  \item Circle-like
-  \item Subtle variation
+  \item Ten-sided
 \end{itemize}
 \end{columns}
 \end{frame}
 
-\begin{frame}{TikZ: Starburst + Cloud}
+\begin{frame}{TikZ: Stars}
 \begin{columns}
+\column{0.5\textwidth}
+\setbeamertemplate{itemize item}{%
+  \tikz[baseline=-0.5ex] \node[star, star points=4, star point ratio=0.5, fill=black, inner sep=1pt] {};%
+}
+\textbf{4-Point Star:}
+\begin{itemize}
+  \item Compass rose
+\end{itemize}
+
+\setbeamertemplate{itemize item}{%
+  \tikz[baseline=-0.5ex] \node[star, star points=5, fill=black, inner sep=1pt] {};%
+}
+\textbf{5-Point Star:}
+\begin{itemize}
+  \item Classic star
+\end{itemize}
+
+\setbeamertemplate{itemize item}{%
+  \tikz[baseline=-0.5ex] \node[star, star points=6, star point ratio=0.5, fill=black, inner sep=1pt] {};%
+}
+\textbf{6-Point Star:}
+\begin{itemize}
+  \item David star
+\end{itemize}
+
 \column{0.5\textwidth}
 \setbeamertemplate{itemize item}{%
   \tikz[baseline=-0.5ex] \node[star, star points=8, star point ratio=0.5, fill=black, inner sep=1pt] {};%
 }
-\textbf{Star (8pt):}
+\textbf{8-Point Star:}
 \begin{itemize}
-  \item Explosion feel
-  \item High energy
+  \item Starburst
 \end{itemize}
 
+\setbeamertemplate{itemize item}{%
+  \tikz[baseline=-0.5ex] \node[star, star points=12, star point ratio=0.4, fill=black, inner sep=0.8pt] {};%
+}
+\textbf{12-Point Star:}
+\begin{itemize}
+  \item Explosion
+\end{itemize}
+
+\setbeamertemplate{itemize item}{%
+  \tikz[baseline=-0.5ex] \node[star, star points=16, star point ratio=0.6, fill=black, inner sep=0.6pt] {};%
+}
+\textbf{16-Point Star:}
+\begin{itemize}
+  \item Sunburst
+\end{itemize}
+\end{columns}
+\end{frame}
+
+\begin{frame}{TikZ: Kite + Dart + Diamond}
+\begin{columns}
+\column{0.5\textwidth}
+\setbeamertemplate{itemize item}{%
+  \tikz[baseline=-0.5ex] \node[kite, fill=black, inner sep=1pt] {};%
+}
+\textbf{Kite:}
+\begin{itemize}
+  \item Kite shape
+  \item Elegant
+\end{itemize}
+
+\setbeamertemplate{itemize item}{%
+  \tikz[baseline=-0.5ex] \node[dart, fill=black, inner sep=1pt] {};%
+}
+\textbf{Dart:}
+\begin{itemize}
+  \item Arrow head
+  \item Directional
+\end{itemize}
+
+\column{0.5\textwidth}
+\setbeamertemplate{itemize item}{%
+  \tikz[baseline=-0.5ex] \node[diamond, fill=black, inner sep=1.5pt] {};%
+}
+\textbf{Diamond:}
+\begin{itemize}
+  \item Rhombus
+  \item Classic
+\end{itemize}
+
+\setbeamertemplate{itemize item}{%
+  \tikz[baseline=-0.5ex] \fill[black] (0,0) -- (0.3,0.15) -- (0.6,0) -- (0.3,-0.15) -- cycle;%
+}
+\textbf{Chevron:}
+\begin{itemize}
+  \item Arrow shape
+  \item Military
+\end{itemize}
+\end{columns}
+\end{frame}
+
+% ============================================================
+\section{TikZ: Symbols + Cloud}
+
+\begin{frame}{TikZ: X + Plus + Arrows}
+\begin{columns}
+\column{0.5\textwidth}
+\setbeamertemplate{itemize item}{%
+  \tikz[baseline=-0.5ex] \node[inner sep=1.5pt] {$\times$};%
+}
+\textbf{X mark:}
+\begin{itemize}
+  \item Bold cross
+\end{itemize}
+
+\setbeamertemplate{itemize item}{%
+  \tikz[baseline=-0.5ex] \node[inner sep=1.5pt] {$+$};%
+}
+\textbf{Plus:}
+\begin{itemize}
+  \item Addition
+\end{itemize}
+
+\column{0.5\textwidth}
+\setbeamertemplate{itemize item}{%
+  \tikz[baseline=-0.5ex] \node[inner sep=1.5pt] {\Large$\rightarrow$};%
+}
+\textbf{Arrow:}
+\begin{itemize}
+  \item Directional
+\end{itemize}
+
+\setbeamertemplate{itemize item}{%
+  \tikz[baseline=-0.5ex] \node[inner sep=1.5pt] {\Large$\Rightarrow$};%
+}
+\textbf{Double arrow:}
+\begin{itemize}
+  \item Implication
+\end{itemize}
+\end{columns}
+\end{frame}
+
+\begin{frame}{TikZ: Cloud + Lightning}
+\begin{columns}
 \column{0.5\textwidth}
 \setbeamertemplate{itemize item}{%
   \tikz[baseline=-0.5ex] \node[cloud, draw=black, inner sep=1.5pt] {};%
@@ -128,56 +420,33 @@
   \item Thought bubble
   \item Creative
 \end{itemize}
-\end{columns}
-\end{frame}
 
-% ============================================================
-\section{TikZ: Symbols + Arrows}
-
-\begin{frame}{TikZ: X + Plus}
-\begin{columns}
-\column{0.5\textwidth}
 \setbeamertemplate{itemize item}{%
-  \tikz[baseline=-0.5ex] \node[inner sep=1.5pt] {$\times$};%
+  \tikz[baseline=-0.5ex] \node[ellipse, draw=black, inner sep=1.5pt] {};%
 }
-\textbf{X mark:}
+\textbf{Ellipse:}
 \begin{itemize}
-  \item Bold cross
-  \item Strong negative
+  \item Soft shape
+  \item Rounded
 \end{itemize}
 
 \column{0.5\textwidth}
 \setbeamertemplate{itemize item}{%
-  \tikz[baseline=-0.5ex] \node[inner sep=1.5pt] {$+$};%
+  \tikz[baseline=-0.5ex] node[inner sep=1pt] {\lightning};%
 }
-\textbf{Plus:}
+\textbf{Lightning:}
 \begin{itemize}
-  \item Addition
-  \item Positive
-\end{itemize}
-\end{columns}
-\end{frame}
-
-\begin{frame}{TikZ: Arrows}
-\begin{columns}
-\column{0.5\textwidth}
-\setbeamertemplate{itemize item}{%
-  \tikz[baseline=-0.5ex] \node[inner sep=1.5pt] {\Large$\rightarrow$};%
-}
-\textbf{Arrow:}
-\begin{itemize}
-  \item Directional
-  \item Process flow
+  \item wasysym in TikZ
+  \item Warning
 \end{itemize}
 
-\column{0.5\textwidth}
 \setbeamertemplate{itemize item}{%
-  \tikz[baseline=-0.5ex] \node[inner sep=1.5pt] {\Large$\Rightarrow$};%
+  \tikz[baseline=-0.5ex] \node[forbidden sign, draw=black, inner sep=1pt] {};%
 }
-\textbf{Double arrow:}
+\textbf{Forbidden:}
 \begin{itemize}
-  \item Strong implication
-  \item Bold direction
+  \item Prohibition
+  \item No-entry
 \end{itemize}
 \end{columns}
 \end{frame}
@@ -194,7 +463,7 @@
 \textbf{Circle:}
 \begin{itemize}
   \item Simple filled
-  \item Clean, classic
+  \item Clean
 \end{itemize}
 
 \setbeamertemplate{itemize item}{%
@@ -202,7 +471,7 @@
 }
 \textbf{Triangle:}
 \begin{itemize}
-  \item Inverted triangle
+  \item Inverted
   \item Directional
 \end{itemize}
 
@@ -214,6 +483,57 @@
 \begin{itemize}
   \item Rotated square
   \item Elegant
+\end{itemize}
+
+\setbeamertemplate{itemize item}{%
+  \tikz[baseline=-0.5ex] \fill[black] (0,0) -- (0.2,0.3) -- (0.4,0) -- (0.2,-0.3) -- cycle;%
+}
+\textbf{Tag:}
+\begin{itemize}
+  \item Pointer tag
+  \item Label
+\end{itemize}
+\end{columns}
+\end{frame}
+
+\begin{frame}{TikZ: Shield + Heart + Arrow}
+\begin{columns}
+\column{0.5\textwidth}
+\setbeamertemplate{itemize item}{%
+  \tikz[baseline=-0.5ex] \fill[black] (0,0.3) -- (0.3,0.15) -- (0.3,-0.15) -- (0,-0.35) -- (-0.3,-0.15) -- (-0.3,0.15) -- cycle;%
+}
+\textbf{Shield:}
+\begin{itemize}
+  \item Protection
+  \item Security
+\end{itemize}
+
+\setbeamertemplate{itemize item}{%
+  \tikz[baseline=-0.5ex] \fill[black] (0,0.15) .. controls (0.3,0.4) and (0.35,0) .. (0,-0.2) .. controls (-0.35,0) and (-0.3,0.4) .. (0,0.15) -- cycle;%
+}
+\textbf{Heart:}
+\begin{itemize}
+  \item Love
+  \item Health
+\end{itemize}
+
+\column{0.5\textwidth}
+\setbeamertemplate{itemize item}{%
+  \tikz[baseline=-0.5ex] \fill[black] (0,0) -- (0.5,0) -- (0.35,0.12) -- (0.35,-0.12) -- cycle;%
+}
+\textbf{Right Arrow:}
+\begin{itemize}
+  \item Directional
+  \item Flow
+\end{itemize}
+
+\setbeamertemplate{itemize item}{%
+  \tikz[baseline=-0.5ex] \fill[black] (0,0) -- (0.3,0.3) -- (0,0.15) -- (-0.3,0.3) -- (-0.15,0) -- (-0.3,-0.3) -- (0,-0.15) -- (0.3,-0.3) -- cycle;%
+}
+\textbf{Star (custom):}
+\begin{itemize}
+  \item 4-point star
+  \item Sparkle
 \end{itemize}
 \end{columns}
 \end{frame}
@@ -229,14 +549,21 @@
 \textbf{Package} & \textbf{Style} & \textbf{Code} \\
 \midrule
 MarVoSym & Checkedbox & \texttt{\textbackslash Checkedbox} \\
-MarVoSym & CrossedBox & \texttt{\textbackslash CrossedBox} \\
-MarVoSym & HollowBox & \texttt{\textbackslash HollowBox} \\
 MarVoSym & PointingHand & \texttt{\textbackslash PointingHand} \\
 Pifont & Ding 67 & \texttt{\textbackslash ding\{67\}} \\
+Pifont & Ding 168 & \texttt{\textbackslash ding\{168\}} \\
+wasysym & Sun & \texttt{\textbackslash sun} \\
+wasysym & Hexagon & \texttt{\$\textbackslash hexagon\$} \\
+wasysym & David Star & \texttt{\$\textbackslash davidsstar\$} \\
 AMSSymb & maltese & \texttt{\textbackslash maltese} \\
 Math & diamond & \texttt{\$\textbackslash diamond\$} \\
-TikZ & Octagon & \texttt{regular polygon sides=8} \\
-TikZ & Star & \texttt{star, star points=8} \\
+Math & boxplus & \texttt{\$\textbackslash boxplus\$} \\
+TikZ & Pentagon & \texttt{regular polygon sides=5} \\
+TikZ & 6-Point Star & \texttt{star, star points=6} \\
+TikZ & Kite & \texttt{kite} \\
+TikZ & Cloud & \texttt{cloud} \\
+TikZ & Shield & custom path \\
+TikZ & Heart & custom path \\
 \bottomrule
 \end{tabular}
 \end{frame}
