@@ -71,7 +71,7 @@ beamer-design-system/
 
 Each template is a complete, compilable Beamer theme with its own personality and best-fit scenario.
 
-### [D Rose](recipes/d-rose/) — 暗场绽放 / Bloom in Darkness
+### [D Rose](recipes/d-rose/) — Bloom in Darkness
 
 | Aspect | Description |
 |--------|-------------|
