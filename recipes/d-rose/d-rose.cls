@@ -72,9 +72,9 @@
 % Beamer colors and navigation
 \setbeamercolor*{normal text}{fg=normalTextColor,bg=bodyColor}
 \setbeamercolor*{structure}{fg=redblack}
-\setbeamercolor{titlelike}{fg=redblack,bg=titleColor}
+\setbeamercolor{titlelike}{fg=redblack,bg={}}
 \setbeamercolor{frametitle}{fg=redblack,bg=bodyColor}
-\setbeamercolor{title}{fg=redblack,bg=titleColor}
+\setbeamercolor{title}{fg=redblack,bg={}}
 \setbeamercolor*{example text}{fg=redblack}
 \setbeamercolor*{alerted text}{fg=alertTextColor}
 \setbeamercolor{itemize item}{fg=redblack}
@@ -108,10 +108,46 @@
 \setbeamerfont{title like}{shape=\scshape}
 \setbeamerfont{frametitle}{shape=\scshape}
 \setbeamerfont{title}{size=\fontsize{20pt}{32pt}\selectfont}
+\setbeamerfont{subtitle}{size=\fontsize{12pt}{22pt}\selectfont}
 \setbeamerfont{author}{size=\fontsize{12pt}{32pt}\selectfont}
 \setbeamerfont{institute}{size=\fontsize{12pt}{32pt}\selectfont}
+\setbeamerfont{date}{size=\fontsize{10pt}{28pt}\selectfont}
 \setbeamerfont{block title}{size=\normalsize}
+\setbeamercolor{subtitle}{fg=titleTextColor}
+\setbeamercolor{author}{fg=normalTextColor}
+\setbeamercolor{institute}{fg=titleTextColor}
+\setbeamercolor{date}{fg=titleTextColor}
 \captionsetup{font=footnotesize,labelfont=bf}
+
+% Title page — transparent bg, allows background image through
+\IfFileExists{fig/hkskyline.png}{%
+  \def\drosehasskyline{1}%
+}{%
+  \def\drosehasskyline{0}%
+}
+
+\setbeamertemplate{title page}{%
+  \vspace{1.5cm}
+  \begin{beamercolorbox}[sep=8pt,center,wd=\paperwidth]{title}
+    \usebeamerfont{title}\inserttitle\par
+    \ifx\insertsubtitle\@empty\else
+      \vspace{0.3cm}
+      {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle}\par
+    \fi
+    \vspace{0.8cm}
+    {\usebeamerfont{author}\insertauthor}\par
+    \vspace{0.2cm}
+    {\usebeamerfont{institute}\insertinstitute}\par
+    \vspace{0.2cm}
+    {\usebeamerfont{date}\insertdate}\par
+  \end{beamercolorbox}%
+  \begin{tikzpicture}[remember picture,overlay]
+    \if1\drosehasskyline
+      \node[anchor=south] at (current page.south)
+        {\includegraphics[width=\paperwidth]{fig/hkskyline.png}};
+    \fi
+  \end{tikzpicture}%
+}
 
 \tikzset{
   every node/.style={font=\usebeamerfont{normal text}\selectfont,text=normal text.fg}

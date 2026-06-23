@@ -11,20 +11,10 @@
 
 \begin{document}
 
-{%
-\usebackgroundtemplate{%
-  \IfFileExists{fig/hkskyline.png}{%
-    \begin{tikzpicture}[remember picture,overlay]
-      \node[anchor=south, yshift=-0.5cm] at (current page.south)
-        {\includegraphics[width=\paperwidth]{fig/hkskyline.png}};
-    \end{tikzpicture}%
-  }{}%
-}
 \begin{frame}[plain]
   \vspace{-1cm}
   \titlepage
 \end{frame}
-}
 
 \input{content/overview}
 \input{content/figures}
