@@ -75,13 +75,27 @@
 \setbeamercolor{itemize item}{fg=redblack}
 \setbeamercolor{enumerate item}{fg=redblack!70}
 \setbeamercolor{description item}{fg=titleTextColor!70}
-\setbeamercolor{section in head/foot}{bg=white, fg=redblack}
-\setbeamercolor{subsection in head/foot}{bg=white, fg=redblack}
+\setbeamercolor{section in head/foot}{bg=white, fg=redblack!45}
+\setbeamercolor{subsection in head/foot}{bg=white, fg=redblack!45}
+\setbeamercolor{soft navigation rule}{bg=redblack!22}
+\setbeamercolor{upper separation line head}{bg=redblack!22}
+\setbeamercolor{lower separation line head}{bg=redblack!10}
+\setbeamerfont{section in head/foot}{size=\fontsize{5.5pt}{6.4pt}\selectfont,series=\bfseries}
+\setbeamerfont{subsection in head/foot}{size=\fontsize{5.5pt}{6.4pt}\selectfont,series=\bfseries}
 
 \useoutertheme[subsection=false]{miniframes}
 \setbeamertemplate{navigation symbols}{}
 \makeatletter
 \beamer@compressfalse
+\setbeamertemplate{mini frame}{%
+  \tikz[baseline=-0.55ex]{\draw[redblack!38,line width=0.32pt] (0,0) circle[radius=0.045cm];}%
+}
+\setbeamertemplate{mini frame in current subsection}{%
+  \tikz[baseline=-0.55ex]{\filldraw[redblack!58,draw=redblack!58,line width=0.32pt] (0,0) circle[radius=0.045cm];}%
+}
+\setbeamertemplate{mini frame in other subsection}{%
+  \tikz[baseline=-0.55ex]{\draw[redblack!28,line width=0.32pt] (0,0) circle[radius=0.045cm];}%
+}
 \makeatother
 
 % Lists
@@ -125,7 +139,4 @@
     \end{beamercolorbox}%
   }%
 }
-
-
-
 
