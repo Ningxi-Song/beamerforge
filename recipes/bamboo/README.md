@@ -1,8 +1,9 @@
 <div align="center">
-  <img src="fig/bamboo.png" width="420" alt="Template inspiration image">
+  <img src="fig/bamboo-white.png" width="520" alt="Template inspiration image">
   <h1>Bamboo</h1>
   <p><strong>A reusable Beamer recipe adapted from the original Bamboo template.</strong></p>
   <p><em>Clean, concise, and suited for clear analytical presentations.</em></p>
+  <p><strong>Creator:</strong> Willie SONG</p>
 </div>
 
 ## Inspiration
@@ -57,4 +58,4 @@ To use the title-page curtain layout with your own image, place an image in `fig
 \titleimage{fig/title-image.png}
 ```
 
-The included `fig/bamboo.png` is for this README introduction page, not a required slide asset.
+The included `fig/bamboo-white.png` is for this README introduction page, not a required slide asset.
