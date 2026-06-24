@@ -1,9 +1,8 @@
-# D Rose
-
 <div align="center">
-  <img src="fig/derrick-rose-seeklogo.png" width="132" alt="D Rose Logo">
-  <br>
-  <em>In the midst of oppression, we bloom.</em>
+  <img src="fig/derrick-rose-seeklogo.png" width="88" alt="D Rose Logo">
+  <h1>D Rose</h1>
+  <p><strong>Black-red Beamer recipe for narratives of tension, resilience, and contrast.</strong></p>
+  <p><em>In the midst of oppression, we bloom.</em></p>
 </div>
 
 ## Inspiration
