@@ -1,12 +1,13 @@
-# D Rose
-
-<img src="fig/derrick-rose-seeklogo.png" width="100" align="right" alt="D Rose Logo">
-
-> *In the midst of oppression, we bloom.*
+<div align="center">
+  <img src="fig/derrick-rose-seeklogo.png" width="88" alt="D Rose Logo">
+  <h1>D Rose</h1>
+  <p><strong>Black-red Beamer recipe for narratives of tension, resilience, and contrast.</strong></p>
+  <p><em>In the midst of oppression, we bloom.</em></p>
+</div>
 
 ## Inspiration
 
-Derrick Rose — youngest NBA MVP, a career of breathtaking highs and devastating injuries. His logo, a rose blooming from the letter "D", encodes the paradox that drives this design: **oppression and blooming coexist, prosperity and regret are inseparable.**
+Derrick Rose -- youngest NBA MVP, a career of breathtaking highs and devastating injuries. His logo, a rose blooming from the letter "D", encodes the paradox that drives this design: **oppression and blooming coexist, prosperity and regret are inseparable.**
 
 ## Best For
 
@@ -18,8 +19,8 @@ Narratives built around polarities, contradictions, and dual forces: social ineq
 |-------|---------|
 | Colors | Red-black primary (RGB 186,84,68), white background |
 | Fonts | Neuton serif (bundled) |
-| Navigation | Miniframes header, page-number footer |
-| Blocks | 2 types — normal (dark gray / light red) + alert (red / light red) |
+| Navigation | Soft miniframes header, page-number footer |
+| Blocks | 2 types -- normal (dark gray / light red) + alert (red / light red) |
 | Bullets | Pifont ding 220/216 |
 
 ## Quick Start
@@ -33,7 +34,7 @@ xelatex main.tex
 
 ## File Structure
 
-```
+```text
 d-rose/
 ├── d-rose.cls          # Theme class
 ├── main.tex            # Entry point
