@@ -1,8 +1,6 @@
 # D Rose
 
-> *In the midst of oppression, we bloom.*
-
-<img src="fig/derrick-rose-seeklogo.png" width="180" alt="D Rose Logo">
+<p><img src="fig/derrick-rose-seeklogo.png" width="180" align="right" alt="D Rose Logo"><i>In the midst of oppression, we bloom.</i></p>
 
 ## Inspiration
 
