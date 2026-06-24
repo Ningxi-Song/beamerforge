@@ -1,6 +1,0 @@
-sources:
-  - src/Inter-Roman.glyphspackage
-  - src/Inter-Italic.glyphspackage
-familyName: Inter
-buildVariable: true
-buildOTF: false

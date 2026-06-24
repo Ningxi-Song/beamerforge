@@ -1,7 +1,0 @@
-sources:
-  - Roman/SourceSerif4Variable-Roman.designspace
-  - Italic/SourceSerif4Variable-Italic.designspace
-familyName: "Source Serif 4"
-axisOrder:
-  - opsz
-  - wght
