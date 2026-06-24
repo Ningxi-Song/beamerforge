@@ -1,17 +1,12 @@
 \documentclass[10pt]{beamer}
-\usepackage{tikz}
-\usepackage{xcolor}
-\usepackage{fontspec}
-\usepackage{booktabs}
-\definecolor{bg}{HTML}{FFFFFF}
-\definecolor{txt}{HTML}{000000}
-\definecolor{ac}{HTML}{B91C1C}
-\setbeamercolor{normal text}{fg=txt,bg=bg}
-\setbeamercolor{frametitle}{fg=white,bg=ac}
+\usepackage{tikz}\usepackage{xcolor}\usepackage{fontspec}
+\definecolor{bg}{HTML}{FFFFFF}\definecolor{txt}{HTML}{000000}\definecolor{ac}{HTML}{B91C1C}
+\setbeamercolor{normal text}{fg=txt,bg=bg}\setbeamercolor{frametitle}{fg=white,bg=ac}
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{frametitle}{\vspace{0.3cm}\textbf{\insertframetitle}\par}
 
 \newfontfamily\AbrilFatfaceLocal[Path=./local/,Extension=.ttf,UprightFont={Abril_Fatface.ttf}]{Abril Fatface}
+\newfontfamily\AlegreyaLocal[Path=./local/,Extension=.ttf,UprightFont={Alegreya.ttf}]{Alegreya}
 \newfontfamily\AlegreyaSansLocal[Path=./local/,Extension=.ttf,UprightFont={Alegreya_Sans.ttf}]{Alegreya Sans}
 \newfontfamily\AlexBrushLocal[Path=./local/,Extension=.ttf,UprightFont={Alex_Brush.ttf}]{Alex Brush}
 \newfontfamily\AlfaSlabOneLocal[Path=./local/,Extension=.ttf,UprightFont={Alfa_Slab_One.ttf}]{Alfa Slab One}
@@ -19,24 +14,44 @@
 \newfontfamily\AlmendraLocal[Path=./local/,Extension=.ttf,UprightFont={Almendra.ttf}]{Almendra}
 \newfontfamily\AnonymousProLocal[Path=./local/,Extension=.ttf,UprightFont={Anonymous_Pro.ttf}]{Anonymous Pro}
 \newfontfamily\AntonLocal[Path=./local/,Extension=.ttf,UprightFont={Anton.ttf}]{Anton}
+\newfontfamily\AntonioLocal[Path=./local/,Extension=.ttf,UprightFont={Antonio.ttf}]{Antonio}
 \newfontfamily\ArchitectsDaughterLocal[Path=./local/,Extension=.ttf,UprightFont={Architects_Daughter.ttf}]{Architects Daughter}
+\newfontfamily\ArchivoLocal[Path=./local/,Extension=.ttf,UprightFont={Archivo.ttf}]{Archivo}
+\newfontfamily\ArchivoBlackLocal[Path=./local/,Extension=.ttf,UprightFont={Archivo_Black.ttf}]{Archivo Black}
+\newfontfamily\ArchivoNarrowLocal[Path=./local/,Extension=.ttf,UprightFont={Archivo_Narrow.ttf}]{Archivo Narrow}
 \newfontfamily\ArvoLocal[Path=./local/,Extension=.ttf,UprightFont={Arvo.ttf}]{Arvo}
+\newfontfamily\AssistantLocal[Path=./local/,Extension=.ttf,UprightFont={Assistant.ttf}]{Assistant}
 \newfontfamily\AtkinsonHyperlegibleLocal[Path=./local/,Extension=.ttf,UprightFont={Atkinson_Hyperlegible.ttf}]{Atkinson Hyperlegible}
 \newfontfamily\AudiowideLocal[Path=./local/,Extension=.ttf,UprightFont={Audiowide.ttf}]{Audiowide}
+\newfontfamily\AzeretMonoLocal[Path=./local/,Extension=.ttf,UprightFont={Azeret_Mono.ttf}]{Azeret Mono}
+\newfontfamily\Baloo2Local[Path=./local/,Extension=.ttf,UprightFont={Baloo_2.ttf}]{Baloo 2}
 \newfontfamily\BalsamiqSansLocal[Path=./local/,Extension=.ttf,UprightFont={Balsamiq_Sans.ttf}]{Balsamiq Sans}
 \newfontfamily\BangersLocal[Path=./local/,Extension=.ttf,UprightFont={Bangers.ttf}]{Bangers}
+\newfontfamily\BarlowCondensedLocal[Path=./local/,Extension=.ttf,UprightFont={Barlow_Condensed.ttf}]{Barlow Condensed}
+\newfontfamily\BarlowSemiCondensedLocal[Path=./local/,Extension=.ttf,UprightFont={Barlow_Semi_Condensed.ttf}]{Barlow Semi Condensed}
 \newfontfamily\BebasNeueLocal[Path=./local/,Extension=.ttf,UprightFont={Bebas_Neue.ttf}]{Bebas Neue}
 \newfontfamily\BevanLocal[Path=./local/,Extension=.ttf,UprightFont={Bevan.ttf}]{Bevan}
+\newfontfamily\BitterLocal[Path=./local/,Extension=.ttf,UprightFont={Bitter.ttf}]{Bitter}
+\newfontfamily\BlackOpsOneLocal[Path=./local/,Extension=.ttf,UprightFont={Black_Ops_One.ttf}]{Black Ops One}
+\newfontfamily\BodoniModaLocal[Path=./local/,Extension=.ttf,UprightFont={Bodoni_Moda.ttf}]{Bodoni Moda}
 \newfontfamily\BoogalooLocal[Path=./local/,Extension=.ttf,UprightFont={Boogaloo.ttf}]{Boogaloo}
 \newfontfamily\BubblegumSansLocal[Path=./local/,Extension=.ttf,UprightFont={Bubblegum_Sans.ttf}]{Bubblegum Sans}
 \newfontfamily\BungeeLocal[Path=./local/,Extension=.ttf,UprightFont={Bungee.ttf}]{Bungee}
+\newfontfamily\CabinLocal[Path=./local/,Extension=.ttf,UprightFont={Cabin.ttf}]{Cabin}
 \newfontfamily\CardoLocal[Path=./local/,Extension=.ttf,UprightFont={Cardo.ttf}]{Cardo}
+\newfontfamily\CatamaranLocal[Path=./local/,Extension=.ttf,UprightFont={Catamaran.ttf}]{Catamaran}
+\newfontfamily\CaveatLocal[Path=./local/,Extension=.ttf,UprightFont={Caveat.ttf}]{Caveat}
 \newfontfamily\ChakraPetchLocal[Path=./local/,Extension=.ttf,UprightFont={Chakra_Petch.ttf}]{Chakra Petch}
 \newfontfamily\ChangaOneLocal[Path=./local/,Extension=.ttf,UprightFont={Changa_One.ttf}]{Changa One}
 \newfontfamily\CherryBombOneLocal[Path=./local/,Extension=.ttf,UprightFont={Cherry_Bomb_One.ttf}]{Cherry Bomb One}
 \newfontfamily\ChewyLocal[Path=./local/,Extension=.ttf,UprightFont={Chewy.ttf}]{Chewy}
+\newfontfamily\ChivoLocal[Path=./local/,Extension=.ttf,UprightFont={Chivo.ttf}]{Chivo}
+\newfontfamily\CinzelLocal[Path=./local/,Extension=.ttf,UprightFont={Cinzel.ttf}]{Cinzel}
+\newfontfamily\ComfortaaLocal[Path=./local/,Extension=.ttf,UprightFont={Comfortaa.ttf}]{Comfortaa}
 \newfontfamily\ComicNeueLocal[Path=./local/,Extension=.ttf,UprightFont={Comic_Neue.ttf}]{Comic Neue}
 \newfontfamily\ComingSoonLocal[Path=./local/,Extension=.ttf,UprightFont={Coming_Soon.ttf}]{Coming Soon}
+\newfontfamily\CormorantGaramondLocal[Path=./local/,Extension=.ttf,UprightFont={Cormorant_Garamond.ttf}]{Cormorant Garamond}
+\newfontfamily\CormorantInfantLocal[Path=./local/,Extension=.ttf,UprightFont={Cormorant_Infant.ttf}]{Cormorant Infant}
 \newfontfamily\CormorantSCLocal[Path=./local/,Extension=.ttf,UprightFont={Cormorant_SC.ttf}]{Cormorant SC}
 \newfontfamily\CormorantUprightLocal[Path=./local/,Extension=.ttf,UprightFont={Cormorant_Upright.ttf}]{Cormorant Upright}
 \newfontfamily\CourgetteLocal[Path=./local/,Extension=.ttf,UprightFont={Courgette.ttf}]{Courgette}
@@ -45,81 +60,155 @@
 \newfontfamily\CreteRoundLocal[Path=./local/,Extension=.ttf,UprightFont={Crete_Round.ttf}]{Crete Round}
 \newfontfamily\CrimsonTextLocal[Path=./local/,Extension=.ttf,UprightFont={Crimson_Text.ttf}]{Crimson Text}
 \newfontfamily\CutiveMonoLocal[Path=./local/,Extension=.ttf,UprightFont={Cutive_Mono.ttf}]{Cutive Mono}
-\newfontfamily\DMMonoLocal[Path=./local/,Extension=.ttf,UprightFont={DM_Mono.ttf}]{DM Mono}
-\newfontfamily\DMSerifDisplayLocal[Path=./local/,Extension=.ttf,UprightFont={DM_Serif_Display.ttf}]{DM Serif Display}
-\newfontfamily\DamionLocal[Path=./local/,Extension=.ttf,UprightFont={Damion.ttf}]{Damion}
+\newfontfamily\DMMonoLocal[Path=./local/,Extension=.ttf,UprightFont={Damion.ttf}]{DM Mono}
+\newfontfamily\DMSansLocal[Path=./local/,Extension=.ttf,UprightFont={Dancing_Script.ttf}]{DM Sans}
+\newfontfamily\DMSerifDisplayLocal[Path=./local/,Extension=.ttf,UprightFont={Darker_Grotesque.ttf}]{DM Serif Display}
+\newfontfamily\DamionLocal[Path=./local/,Extension=.ttf,UprightFont={DM_Mono.ttf}]{Damion}
+\newfontfamily\DancingScriptLocal[Path=./local/,Extension=.ttf,UprightFont={DM_Sans.ttf}]{Dancing Script}
+\newfontfamily\DarkerGrotesqueLocal[Path=./local/,Extension=.ttf,UprightFont={DM_Serif_Display.ttf}]{Darker Grotesque}
+\newfontfamily\DomineLocal[Path=./local/,Extension=.ttf,UprightFont={Domine.ttf}]{Domine}
+\newfontfamily\DosisLocal[Path=./local/,Extension=.ttf,UprightFont={Dosis.ttf}]{Dosis}
+\newfontfamily\DynaPuffLocal[Path=./local/,Extension=.ttf,UprightFont={DynaPuff.ttf}]{DynaPuff}
+\newfontfamily\EBGaramondLocal[Path=./local/,Extension=.ttf,UprightFont={EB_Garamond.ttf}]{EB Garamond}
 \newfontfamily\EwertLocal[Path=./local/,Extension=.ttf,UprightFont={Ewert.ttf}]{Ewert}
+\newfontfamily\Exo2Local[Path=./local/,Extension=.ttf,UprightFont={Exo_2.ttf}]{Exo 2}
+\newfontfamily\FamiljenGroteskLocal[Path=./local/,Extension=.ttf,UprightFont={Familjen_Grotesk.ttf}]{Familjen Grotesk}
 \newfontfamily\FascinateLocal[Path=./local/,Extension=.ttf,UprightFont={Fascinate.ttf}]{Fascinate}
+\newfontfamily\FiraCodeLocal[Path=./local/,Extension=.ttf,UprightFont={Fira_Code.ttf}]{Fira Code}
 \newfontfamily\FiraSansLocal[Path=./local/,Extension=.ttf,UprightFont={Fira_Sans.ttf}]{Fira Sans}
+\newfontfamily\FiraSansCondensedLocal[Path=./local/,Extension=.ttf,UprightFont={Fira_Sans_Condensed.ttf}]{Fira Sans Condensed}
 \newfontfamily\FjallaOneLocal[Path=./local/,Extension=.ttf,UprightFont={Fjalla_One.ttf}]{Fjalla One}
+\newfontfamily\FrauncesLocal[Path=./local/,Extension=.ttf,UprightFont={Fraunces.ttf}]{Fraunces}
+\newfontfamily\FredokaLocal[Path=./local/,Extension=.ttf,UprightFont={Fredoka.ttf}]{Fredoka}
 \newfontfamily\FrijoleLocal[Path=./local/,Extension=.ttf,UprightFont={Frijole.ttf}]{Frijole}
 \newfontfamily\GamjaFlowerLocal[Path=./local/,Extension=.ttf,UprightFont={Gamja_Flower.ttf}]{Gamja Flower}
+\newfontfamily\GeistMonoLocal[Path=./local/,Extension=.ttf,UprightFont={Geist_Mono.ttf}]{Geist Mono}
 \newfontfamily\GloriaHallelujahLocal[Path=./local/,Extension=.ttf,UprightFont={Gloria_Hallelujah.ttf}]{Gloria Hallelujah}
+\newfontfamily\GoogleSansCodeLocal[Path=./local/,Extension=.ttf,UprightFont={Google_Sans_Code.ttf}]{Google Sans Code}
 \newfontfamily\GraduateLocal[Path=./local/,Extension=.ttf,UprightFont={Graduate.ttf}]{Graduate}
 \newfontfamily\GreatVibesLocal[Path=./local/,Extension=.ttf,UprightFont={Great_Vibes.ttf}]{Great Vibes}
+\newfontfamily\GrenzeLocal[Path=./local/,Extension=.ttf,UprightFont={Grenze.ttf}]{Grenze}
+\newfontfamily\GrenzeGotischLocal[Path=./local/,Extension=.ttf,UprightFont={Grenze_Gotisch.ttf}]{Grenze Gotisch}
+\newfontfamily\HankenGroteskLocal[Path=./local/,Extension=.ttf,UprightFont={Hanken_Grotesk.ttf}]{Hanken Grotesk}
 \newfontfamily\HindLocal[Path=./local/,Extension=.ttf,UprightFont={Hind.ttf}]{Hind}
 \newfontfamily\HomemadeAppleLocal[Path=./local/,Extension=.ttf,UprightFont={Homemade_Apple.ttf}]{Homemade Apple}
+\newfontfamily\HubotSansLocal[Path=./local/,Extension=.ttf,UprightFont={Hubot_Sans.ttf}]{Hubot Sans}
 \newfontfamily\IBMPlexMonoLocal[Path=./local/,Extension=.ttf,UprightFont={IBM_Plex_Mono.ttf}]{IBM Plex Mono}
+\newfontfamily\IBMPlexSansLocal[Path=./local/,Extension=.ttf,UprightFont={IBM_Plex_Sans.ttf}]{IBM Plex Sans}
+\newfontfamily\IBMPlexSansCondensedLocal[Path=./local/,Extension=.ttf,UprightFont={IBM_Plex_Sans_Condensed.ttf}]{IBM Plex Sans Condensed}
 \newfontfamily\IBMPlexSerifLocal[Path=./local/,Extension=.ttf,UprightFont={IBM_Plex_Serif.ttf}]{IBM Plex Serif}
 \newfontfamily\IMFellEnglishLocal[Path=./local/,Extension=.ttf,UprightFont={IM_Fell_English.ttf}]{IM Fell English}
 \newfontfamily\InconsolataLocal[Path=./local/,Extension=.ttf,UprightFont={Inconsolata.ttf}]{Inconsolata}
 \newfontfamily\IndieFlowerLocal[Path=./local/,Extension=.ttf,UprightFont={Indie_Flower.ttf}]{Indie Flower}
+\newfontfamily\InterLocal[Path=./local/,Extension=.ttf,UprightFont={Inter.ttf}]{Inter}
 \newfontfamily\ItalianaLocal[Path=./local/,Extension=.ttf,UprightFont={Italiana.ttf}]{Italiana}
+\newfontfamily\JetBrainsMonoLocal[Path=./local/,Extension=.ttf,UprightFont={JetBrains_Mono.ttf}]{JetBrains Mono}
+\newfontfamily\JosefinSansLocal[Path=./local/,Extension=.ttf,UprightFont={Josefin_Sans.ttf}]{Josefin Sans}
+\newfontfamily\JostLocal[Path=./local/,Extension=.ttf,UprightFont={Jost.ttf}]{Jost}
 \newfontfamily\KalamLocal[Path=./local/,Extension=.ttf,UprightFont={Kalam.ttf}]{Kalam}
+\newfontfamily\KarlaLocal[Path=./local/,Extension=.ttf,UprightFont={Karla.ttf}]{Karla}
 \newfontfamily\KaushanScriptLocal[Path=./local/,Extension=.ttf,UprightFont={Kaushan_Script.ttf}]{Kaushan Script}
 \newfontfamily\LatoLocal[Path=./local/,Extension=.ttf,UprightFont={Lato.ttf}]{Lato}
+\newfontfamily\LeagueGothicLocal[Path=./local/,Extension=.ttf,UprightFont={League_Gothic.ttf}]{League Gothic}
+\newfontfamily\LeagueSpartanLocal[Path=./local/,Extension=.ttf,UprightFont={League_Spartan.ttf}]{League Spartan}
+\newfontfamily\LexendLocal[Path=./local/,Extension=.ttf,UprightFont={Lexend.ttf}]{Lexend}
+\newfontfamily\LibreBaskervilleLocal[Path=./local/,Extension=.ttf,UprightFont={Libre_Baskerville.ttf}]{Libre Baskerville}
+\newfontfamily\LibreBodoniLocal[Path=./local/,Extension=.ttf,UprightFont={Libre_Bodoni.ttf}]{Libre Bodoni}
+\newfontfamily\LibreCaslonTextLocal[Path=./local/,Extension=.ttf,UprightFont={Libre_Caslon_Text.ttf}]{Libre Caslon Text}
+\newfontfamily\LibreFranklinLocal[Path=./local/,Extension=.ttf,UprightFont={Libre_Franklin.ttf}]{Libre Franklin}
 \newfontfamily\LimelightLocal[Path=./local/,Extension=.ttf,UprightFont={Limelight.ttf}]{Limelight}
+\newfontfamily\LiterataLocal[Path=./local/,Extension=.ttf,UprightFont={Literata.ttf}]{Literata}
 \newfontfamily\LobsterLocal[Path=./local/,Extension=.ttf,UprightFont={Lobster.ttf}]{Lobster}
+\newfontfamily\LoraLocal[Path=./local/,Extension=.ttf,UprightFont={Lora.ttf}]{Lora}
 \newfontfamily\LuckiestGuyLocal[Path=./local/,Extension=.ttf,UprightFont={Luckiest_Guy.ttf}]{Luckiest Guy}
-\newfontfamily\MPLUSRounded1cLocal[Path=./local/,Extension=.ttf,UprightFont={M_PLUS_Rounded_1c.ttf}]{M PLUS Rounded 1c}
-\newfontfamily\MajorMonoDisplayLocal[Path=./local/,Extension=.ttf,UprightFont={Major_Mono_Display.ttf}]{Major Mono Display}
-\newfontfamily\MarcellusLocal[Path=./local/,Extension=.ttf,UprightFont={Marcellus.ttf}]{Marcellus}
-\newfontfamily\MedievalSharpLocal[Path=./local/,Extension=.ttf,UprightFont={MedievalSharp.ttf}]{MedievalSharp}
-\newfontfamily\MichromaLocal[Path=./local/,Extension=.ttf,UprightFont={Michroma.ttf}]{Michroma}
-\newfontfamily\MonotonLocal[Path=./local/,Extension=.ttf,UprightFont={Monoton.ttf}]{Monoton}
+\newfontfamily\MPLUSRounded1cLocal[Path=./local/,Extension=.ttf,UprightFont={Major_Mono_Display.ttf}]{M PLUS Rounded 1c}
+\newfontfamily\MajorMonoDisplayLocal[Path=./local/,Extension=.ttf,UprightFont={Manrope.ttf}]{Major Mono Display}
+\newfontfamily\ManropeLocal[Path=./local/,Extension=.ttf,UprightFont={Marcellus.ttf}]{Manrope}
+\newfontfamily\MarcellusLocal[Path=./local/,Extension=.ttf,UprightFont={MedievalSharp.ttf}]{Marcellus}
+\newfontfamily\MedievalSharpLocal[Path=./local/,Extension=.ttf,UprightFont={Merienda.ttf}]{MedievalSharp}
+\newfontfamily\MeriendaLocal[Path=./local/,Extension=.ttf,UprightFont={Merriweather.ttf}]{Merienda}
+\newfontfamily\MerriweatherLocal[Path=./local/,Extension=.ttf,UprightFont={Michroma.ttf}]{Merriweather}
+\newfontfamily\MichromaLocal[Path=./local/,Extension=.ttf,UprightFont={Mona_Sans.ttf}]{Michroma}
+\newfontfamily\MonaSansLocal[Path=./local/,Extension=.ttf,UprightFont={Monoton.ttf}]{Mona Sans}
+\newfontfamily\MonotonLocal[Path=./local/,Extension=.ttf,UprightFont={Montserrat.ttf}]{Monoton}
+\newfontfamily\MontserratLocal[Path=./local/,Extension=.ttf,UprightFont={Mulish.ttf}]{Montserrat}
+\newfontfamily\MulishLocal[Path=./local/,Extension=.ttf,UprightFont={M_PLUS_Rounded_1c.ttf}]{Mulish}
 \newfontfamily\NanumPenScriptLocal[Path=./local/,Extension=.ttf,UprightFont={Nanum_Pen_Script.ttf}]{Nanum Pen Script}
-\newfontfamily\NewRockerLocal[Path=./local/,Extension=.ttf,UprightFont={New_Rocker.ttf}]{New Rocker}
+\newfontfamily\NewRockerLocal[Path=./local/,Extension=.ttf,UprightFont={Newsreader.ttf}]{New Rocker}
+\newfontfamily\NewsreaderLocal[Path=./local/,Extension=.ttf,UprightFont={New_Rocker.ttf}]{Newsreader}
 \newfontfamily\NoricanLocal[Path=./local/,Extension=.ttf,UprightFont={Norican.ttf}]{Norican}
+\newfontfamily\NotoSansLocal[Path=./local/,Extension=.ttf,UprightFont={Noto_Sans.ttf}]{Noto Sans}
+\newfontfamily\NotoSansMonoLocal[Path=./local/,Extension=.ttf,UprightFont={Noto_Sans_Mono.ttf}]{Noto Sans Mono}
+\newfontfamily\NotoSerifLocal[Path=./local/,Extension=.ttf,UprightFont={Noto_Serif.ttf}]{Noto Serif}
+\newfontfamily\NunitoLocal[Path=./local/,Extension=.ttf,UprightFont={Nunito.ttf}]{Nunito}
+\newfontfamily\NunitoSansLocal[Path=./local/,Extension=.ttf,UprightFont={Nunito_Sans.ttf}]{Nunito Sans}
 \newfontfamily\OleoScriptLocal[Path=./local/,Extension=.ttf,UprightFont={Oleo_Script.ttf}]{Oleo Script}
-\newfontfamily\PTSansLocal[Path=./local/,Extension=.ttf,UprightFont={PT_Sans.ttf}]{PT Sans}
-\newfontfamily\PTSerifLocal[Path=./local/,Extension=.ttf,UprightFont={PT_Serif.ttf}]{PT Serif}
-\newfontfamily\PacificoLocal[Path=./local/,Extension=.ttf,UprightFont={Pacifico.ttf}]{Pacifico}
-\newfontfamily\ParisienneLocal[Path=./local/,Extension=.ttf,UprightFont={Parisienne.ttf}]{Parisienne}
-\newfontfamily\PatrickHandLocal[Path=./local/,Extension=.ttf,UprightFont={Patrick_Hand.ttf}]{Patrick Hand}
-\newfontfamily\PermanentMarkerLocal[Path=./local/,Extension=.ttf,UprightFont={Permanent_Marker.ttf}]{Permanent Marker}
-\newfontfamily\PetitFormalScriptLocal[Path=./local/,Extension=.ttf,UprightFont={Petit_Formal_Script.ttf}]{Petit Formal Script}
-\newfontfamily\PinyonScriptLocal[Path=./local/,Extension=.ttf,UprightFont={Pinyon_Script.ttf}]{Pinyon Script}
-\newfontfamily\PirataOneLocal[Path=./local/,Extension=.ttf,UprightFont={Pirata_One.ttf}]{Pirata One}
-\newfontfamily\PoppinsLocal[Path=./local/,Extension=.ttf,UprightFont={Poppins.ttf}]{Poppins}
-\newfontfamily\PrataLocal[Path=./local/,Extension=.ttf,UprightFont={Prata.ttf}]{Prata}
+\newfontfamily\OpenSansLocal[Path=./local/,Extension=.ttf,UprightFont={Open_Sans.ttf}]{Open Sans}
+\newfontfamily\OrbitronLocal[Path=./local/,Extension=.ttf,UprightFont={Orbitron.ttf}]{Orbitron}
+\newfontfamily\OswaldLocal[Path=./local/,Extension=.ttf,UprightFont={Oswald.ttf}]{Oswald}
+\newfontfamily\OutfitLocal[Path=./local/,Extension=.ttf,UprightFont={Outfit.ttf}]{Outfit}
+\newfontfamily\OxaniumLocal[Path=./local/,Extension=.ttf,UprightFont={Oxanium.ttf}]{Oxanium}
+\newfontfamily\PTSansLocal[Path=./local/,Extension=.ttf,UprightFont={Pacifico.ttf}]{PT Sans}
+\newfontfamily\PTSerifLocal[Path=./local/,Extension=.ttf,UprightFont={Parisienne.ttf}]{PT Serif}
+\newfontfamily\PacificoLocal[Path=./local/,Extension=.ttf,UprightFont={Patrick_Hand.ttf}]{Pacifico}
+\newfontfamily\ParisienneLocal[Path=./local/,Extension=.ttf,UprightFont={Permanent_Marker.ttf}]{Parisienne}
+\newfontfamily\PatrickHandLocal[Path=./local/,Extension=.ttf,UprightFont={Petit_Formal_Script.ttf}]{Patrick Hand}
+\newfontfamily\PermanentMarkerLocal[Path=./local/,Extension=.ttf,UprightFont={Pinyon_Script.ttf}]{Permanent Marker}
+\newfontfamily\PetitFormalScriptLocal[Path=./local/,Extension=.ttf,UprightFont={Pirata_One.ttf}]{Petit Formal Script}
+\newfontfamily\PinyonScriptLocal[Path=./local/,Extension=.ttf,UprightFont={Playfair_Display.ttf}]{Pinyon Script}
+\newfontfamily\PirataOneLocal[Path=./local/,Extension=.ttf,UprightFont={Poppins.ttf}]{Pirata One}
+\newfontfamily\PlayfairDisplayLocal[Path=./local/,Extension=.ttf,UprightFont={Prata.ttf}]{Playfair Display}
+\newfontfamily\PoppinsLocal[Path=./local/,Extension=.ttf,UprightFont={PT_Sans.ttf}]{Poppins}
+\newfontfamily\PrataLocal[Path=./local/,Extension=.ttf,UprightFont={PT_Serif.ttf}]{Prata}
+\newfontfamily\PublicSansLocal[Path=./local/,Extension=.ttf,UprightFont={Public_Sans.ttf}]{Public Sans}
 \newfontfamily\QuestrialLocal[Path=./local/,Extension=.ttf,UprightFont={Questrial.ttf}]{Questrial}
+\newfontfamily\QuicksandLocal[Path=./local/,Extension=.ttf,UprightFont={Quicksand.ttf}]{Quicksand}
 \newfontfamily\RajdhaniLocal[Path=./local/,Extension=.ttf,UprightFont={Rajdhani.ttf}]{Rajdhani}
+\newfontfamily\RalewayLocal[Path=./local/,Extension=.ttf,UprightFont={Raleway.ttf}]{Raleway}
 \newfontfamily\ReenieBeanieLocal[Path=./local/,Extension=.ttf,UprightFont={Reenie_Beanie.ttf}]{Reenie Beanie}
+\newfontfamily\RethinkSansLocal[Path=./local/,Extension=.ttf,UprightFont={Rethink_Sans.ttf}]{Rethink Sans}
+\newfontfamily\RobotoLocal[Path=./local/,Extension=.ttf,UprightFont={Roboto.ttf}]{Roboto}
+\newfontfamily\RobotoCondensedLocal[Path=./local/,Extension=.ttf,UprightFont={Roboto_Condensed.ttf}]{Roboto Condensed}
+\newfontfamily\RobotoMonoLocal[Path=./local/,Extension=.ttf,UprightFont={Roboto_Mono.ttf}]{Roboto Mono}
+\newfontfamily\RobotoSlabLocal[Path=./local/,Extension=.ttf,UprightFont={Roboto_Slab.ttf}]{Roboto Slab}
+\newfontfamily\RokkittLocal[Path=./local/,Extension=.ttf,UprightFont={Rokkitt.ttf}]{Rokkitt}
 \newfontfamily\RougeScriptLocal[Path=./local/,Extension=.ttf,UprightFont={Rouge_Script.ttf}]{Rouge Script}
+\newfontfamily\RubikLocal[Path=./local/,Extension=.ttf,UprightFont={Rubik.ttf}]{Rubik}
 \newfontfamily\RubikMonoOneLocal[Path=./local/,Extension=.ttf,UprightFont={Rubik_Mono_One.ttf}]{Rubik Mono One}
 \newfontfamily\RyeLocal[Path=./local/,Extension=.ttf,UprightFont={Rye.ttf}]{Rye}
-\newfontfamily\SacramentoLocal[Path=./local/,Extension=.ttf,UprightFont={Sacramento.ttf}]{Sacramento}
-\newfontfamily\SancreekLocal[Path=./local/,Extension=.ttf,UprightFont={Sancreek.ttf}]{Sancreek}
-\newfontfamily\SatisfyLocal[Path=./local/,Extension=.ttf,UprightFont={Satisfy.ttf}]{Satisfy}
-\newfontfamily\ShadowsIntoLightLocal[Path=./local/,Extension=.ttf,UprightFont={Shadows_Into_Light.ttf}]{Shadows Into Light}
-\newfontfamily\ShareTechMonoLocal[Path=./local/,Extension=.ttf,UprightFont={Share_Tech_Mono.ttf}]{Share Tech Mono}
-\newfontfamily\ShortStackLocal[Path=./local/,Extension=.ttf,UprightFont={Short_Stack.ttf}]{Short Stack}
-\newfontfamily\SixCapsLocal[Path=./local/,Extension=.ttf,UprightFont={Six_Caps.ttf}]{Six Caps}
-\newfontfamily\SmokumLocal[Path=./local/,Extension=.ttf,UprightFont={Smokum.ttf}]{Smokum}
-\newfontfamily\SnigletLocal[Path=./local/,Extension=.ttf,UprightFont={Sniglet.ttf}]{Sniglet}
-\newfontfamily\SpaceMonoLocal[Path=./local/,Extension=.ttf,UprightFont={Space_Mono.ttf}]{Space Mono}
-\newfontfamily\SpecialEliteLocal[Path=./local/,Extension=.ttf,UprightFont={Special_Elite.ttf}]{Special Elite}
-\newfontfamily\SpectralLocal[Path=./local/,Extension=.ttf,UprightFont={Spectral.ttf}]{Spectral}
-\newfontfamily\StaatlichesLocal[Path=./local/,Extension=.ttf,UprightFont={Staatliches.ttf}]{Staatliches}
+\newfontfamily\STIXTwoTextLocal[Path=./local/,Extension=.ttf,UprightFont={Sacramento.ttf}]{STIX Two Text}
+\newfontfamily\SacramentoLocal[Path=./local/,Extension=.ttf,UprightFont={Sancreek.ttf}]{Sacramento}
+\newfontfamily\SancreekLocal[Path=./local/,Extension=.ttf,UprightFont={Satisfy.ttf}]{Sancreek}
+\newfontfamily\SatisfyLocal[Path=./local/,Extension=.ttf,UprightFont={Shadows_Into_Light.ttf}]{Satisfy}
+\newfontfamily\ShadowsIntoLightLocal[Path=./local/,Extension=.ttf,UprightFont={Share_Tech_Mono.ttf}]{Shadows Into Light}
+\newfontfamily\ShareTechMonoLocal[Path=./local/,Extension=.ttf,UprightFont={Short_Stack.ttf}]{Share Tech Mono}
+\newfontfamily\ShortStackLocal[Path=./local/,Extension=.ttf,UprightFont={Six_Caps.ttf}]{Short Stack}
+\newfontfamily\SixCapsLocal[Path=./local/,Extension=.ttf,UprightFont={Smokum.ttf}]{Six Caps}
+\newfontfamily\SmokumLocal[Path=./local/,Extension=.ttf,UprightFont={Sniglet.ttf}]{Smokum}
+\newfontfamily\SnigletLocal[Path=./local/,Extension=.ttf,UprightFont={Sora.ttf}]{Sniglet}
+\newfontfamily\SoraLocal[Path=./local/,Extension=.ttf,UprightFont={Source_Code_Pro.ttf}]{Sora}
+\newfontfamily\SourGummyLocal[Path=./local/,Extension=.ttf,UprightFont={Source_Sans_3.ttf}]{Sour Gummy}
+\newfontfamily\SourceCodeProLocal[Path=./local/,Extension=.ttf,UprightFont={Source_Serif_4.ttf}]{Source Code Pro}
+\newfontfamily\SourceSans3Local[Path=./local/,Extension=.ttf,UprightFont={Sour_Gummy.ttf}]{Source Sans 3}
+\newfontfamily\SourceSerif4Local[Path=./local/,Extension=.ttf,UprightFont={Space_Grotesk.ttf}]{Source Serif 4}
+\newfontfamily\SpaceGroteskLocal[Path=./local/,Extension=.ttf,UprightFont={Space_Mono.ttf}]{Space Grotesk}
+\newfontfamily\SpaceMonoLocal[Path=./local/,Extension=.ttf,UprightFont={Special_Elite.ttf}]{Space Mono}
+\newfontfamily\SpecialEliteLocal[Path=./local/,Extension=.ttf,UprightFont={Spectral.ttf}]{Special Elite}
+\newfontfamily\SpectralLocal[Path=./local/,Extension=.ttf,UprightFont={Staatliches.ttf}]{Spectral}
+\newfontfamily\StaatlichesLocal[Path=./local/,Extension=.ttf,UprightFont={STIX_Two_Text.ttf}]{Staatliches}
 \newfontfamily\SyneMonoLocal[Path=./local/,Extension=.ttf,UprightFont={Syne_Mono.ttf}]{Syne Mono}
 \newfontfamily\TangerineLocal[Path=./local/,Extension=.ttf,UprightFont={Tangerine.ttf}]{Tangerine}
+\newfontfamily\TekoLocal[Path=./local/,Extension=.ttf,UprightFont={Teko.ttf}]{Teko}
 \newfontfamily\TinosLocal[Path=./local/,Extension=.ttf,UprightFont={Tinos.ttf}]{Tinos}
 \newfontfamily\TomorrowLocal[Path=./local/,Extension=.ttf,UprightFont={Tomorrow.ttf}]{Tomorrow}
 \newfontfamily\UbuntuLocal[Path=./local/,Extension=.ttf,UprightFont={Ubuntu.ttf}]{Ubuntu}
 \newfontfamily\UbuntuMonoLocal[Path=./local/,Extension=.ttf,UprightFont={Ubuntu_Mono.ttf}]{Ubuntu Mono}
 \newfontfamily\UltraLocal[Path=./local/,Extension=.ttf,UprightFont={Ultra.ttf}]{Ultra}
 \newfontfamily\UnifrakturMaguntiaLocal[Path=./local/,Extension=.ttf,UprightFont={UnifrakturMaguntia.ttf}]{UnifrakturMaguntia}
+\newfontfamily\UrbanistLocal[Path=./local/,Extension=.ttf,UprightFont={Urbanist.ttf}]{Urbanist}
 \newfontfamily\VarelaRoundLocal[Path=./local/,Extension=.ttf,UprightFont={Varela_Round.ttf}]{Varela Round}
+\newfontfamily\VollkornLocal[Path=./local/,Extension=.ttf,UprightFont={Vollkorn.ttf}]{Vollkorn}
+\newfontfamily\WorkSansLocal[Path=./local/,Extension=.ttf,UprightFont={Work_Sans.ttf}]{Work Sans}
 \newfontfamily\XanhMonoLocal[Path=./local/,Extension=.ttf,UprightFont={Xanh_Mono.ttf}]{Xanh Mono}
 \newfontfamily\YellowtailLocal[Path=./local/,Extension=.ttf,UprightFont={Yellowtail.ttf}]{Yellowtail}
 \newfontfamily\YesevaOneLocal[Path=./local/,Extension=.ttf,UprightFont={Yeseva_One.ttf}]{Yeseva One}
@@ -128,110 +217,222 @@
 
 \begin{document}
 
-\begin{frame}{1. Serif ? Old Style, Transitional, Modern}
+\begin{frame}{Serif (1)}
 \vspace{-0.2cm}\tiny
+  {\AbrilFatfaceLocal\makebox[2.8cm][l]{\bfseries Abril Fatface}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\AlegreyaLocal\makebox[2.8cm][l]{\bfseries Alegreya}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\AlfaSlabOneLocal\makebox[2.8cm][l]{\bfseries Alfa Slab One}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\ArvoLocal\makebox[2.8cm][l]{\bfseries Arvo}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\BevanLocal\makebox[2.8cm][l]{\bfseries Bevan}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\BitterLocal\makebox[2.8cm][l]{\bfseries Bitter}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\BodoniModaLocal\makebox[2.8cm][l]{\bfseries Bodoni Moda}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\CardoLocal\makebox[2.8cm][l]{\bfseries Cardo}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\CinzelLocal\makebox[2.8cm][l]{\bfseries Cinzel}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\CormorantGaramondLocal\makebox[2.8cm][l]{\bfseries Cormorant Garamond}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\CormorantInfantLocal\makebox[2.8cm][l]{\bfseries Cormorant Infant}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\CormorantSCLocal\makebox[2.8cm][l]{\bfseries Cormorant SC}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\CormorantUprightLocal\makebox[2.8cm][l]{\bfseries Cormorant Upright}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\CreteRoundLocal\makebox[2.8cm][l]{\bfseries Crete Round}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\CrimsonTextLocal\makebox[2.8cm][l]{\bfseries Crimson Text}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\IBMPlexSerifLocal\makebox[2.8cm][l]{\bfseries IBM Plex Serif}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\ItalianaLocal\makebox[2.8cm][l]{\bfseries Italiana}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\MarcellusLocal\makebox[2.8cm][l]{\bfseries Marcellus}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\PTSerifLocal\makebox[2.8cm][l]{\bfseries PT Serif}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\PrataLocal\makebox[2.8cm][l]{\bfseries Prata}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\SpectralLocal\makebox[2.8cm][l]{\bfseries Spectral}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\TinosLocal\makebox[2.8cm][l]{\bfseries Tinos}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\DMSerifDisplayLocal\makebox[2.8cm][l]{\bfseries DM Serif Display}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\DomineLocal\makebox[2.8cm][l]{\bfseries Domine}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\EBGaramondLocal\makebox[2.8cm][l]{\bfseries EB Garamond}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
 \end{frame}
 
-\begin{frame}{2. Serif ? Slab, Editorial, Book}
+\begin{frame}{Serif (2)}
 \vspace{-0.2cm}\tiny
-  {\ArvoLocal\makebox[2.8cm][l]{\bfseries Arvo}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\AlfaSlabOneLocal\makebox[2.8cm][l]{\bfseries Alfa Slab One}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\DMSerifDisplayLocal\makebox[2.8cm][l]{\bfseries DM Serif Display}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\FrauncesLocal\makebox[2.8cm][l]{\bfseries Fraunces}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\GraduateLocal\makebox[2.8cm][l]{\bfseries Graduate}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\IBMPlexSerifLocal\makebox[2.8cm][l]{\bfseries IBM Plex Serif}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\IMFellEnglishLocal\makebox[2.8cm][l]{\bfseries IM Fell English}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\ItalianaLocal\makebox[2.8cm][l]{\bfseries Italiana}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\LibreBaskervilleLocal\makebox[2.8cm][l]{\bfseries Libre Baskerville}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\LibreBodoniLocal\makebox[2.8cm][l]{\bfseries Libre Bodoni}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\LibreCaslonTextLocal\makebox[2.8cm][l]{\bfseries Libre Caslon Text}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\LiterataLocal\makebox[2.8cm][l]{\bfseries Literata}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\LoraLocal\makebox[2.8cm][l]{\bfseries Lora}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\MarcellusLocal\makebox[2.8cm][l]{\bfseries Marcellus}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\MerriweatherLocal\makebox[2.8cm][l]{\bfseries Merriweather}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\NewsreaderLocal\makebox[2.8cm][l]{\bfseries Newsreader}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\NotoSerifLocal\makebox[2.8cm][l]{\bfseries Noto Serif}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\PTSerifLocal\makebox[2.8cm][l]{\bfseries PT Serif}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\PlayfairDisplayLocal\makebox[2.8cm][l]{\bfseries Playfair Display}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\PrataLocal\makebox[2.8cm][l]{\bfseries Prata}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\RobotoSlabLocal\makebox[2.8cm][l]{\bfseries Roboto Slab}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+\end{frame}
+
+\begin{frame}{Serif (3)}
+\vspace{-0.2cm}\tiny
+  {\RokkittLocal\makebox[2.8cm][l]{\bfseries Rokkitt}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\STIXTwoTextLocal\makebox[2.8cm][l]{\bfseries STIX Two Text}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\SourceSerif4Local\makebox[2.8cm][l]{\bfseries Source Serif 4}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\SpectralLocal\makebox[2.8cm][l]{\bfseries Spectral}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\TinosLocal\makebox[2.8cm][l]{\bfseries Tinos}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\UltraLocal\makebox[2.8cm][l]{\bfseries Ultra}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\VollkornLocal\makebox[2.8cm][l]{\bfseries Vollkorn}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\YesevaOneLocal\makebox[2.8cm][l]{\bfseries Yeseva One}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\ZillaSlabLocal\makebox[2.8cm][l]{\bfseries Zilla Slab}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
 \end{frame}
 
-\begin{frame}{3. Sans-Serif ? Neutral, Humanist, Geometric}
+\begin{frame}{Sans (1)}
 \vspace{-0.2cm}\tiny
+  {\AlegreyaSansLocal\makebox[2.8cm][l]{\bfseries Alegreya Sans}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\AntonLocal\makebox[2.8cm][l]{\bfseries Anton}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\AntonioLocal\makebox[2.8cm][l]{\bfseries Antonio}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\ArchivoLocal\makebox[2.8cm][l]{\bfseries Archivo}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\ArchivoBlackLocal\makebox[2.8cm][l]{\bfseries Archivo Black}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\ArchivoNarrowLocal\makebox[2.8cm][l]{\bfseries Archivo Narrow}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\AtkinsonHyperlegibleLocal\makebox[2.8cm][l]{\bfseries Atkinson Hyperlegible}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\Baloo2Local\makebox[2.8cm][l]{\bfseries Baloo 2}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\BarlowCondensedLocal\makebox[2.8cm][l]{\bfseries Barlow Condensed}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\BarlowSemiCondensedLocal\makebox[2.8cm][l]{\bfseries Barlow Semi Condensed}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\BebasNeueLocal\makebox[2.8cm][l]{\bfseries Bebas Neue}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\BubblegumSansLocal\makebox[2.8cm][l]{\bfseries Bubblegum Sans}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\CabinLocal\makebox[2.8cm][l]{\bfseries Cabin}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\ChakraPetchLocal\makebox[2.8cm][l]{\bfseries Chakra Petch}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\ComfortaaLocal\makebox[2.8cm][l]{\bfseries Comfortaa}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\DMSansLocal\makebox[2.8cm][l]{\bfseries DM Sans}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\DarkerGrotesqueLocal\makebox[2.8cm][l]{\bfseries Darker Grotesque}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\DosisLocal\makebox[2.8cm][l]{\bfseries Dosis}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+\end{frame}
+
+\begin{frame}{Sans (2)}
+\vspace{-0.2cm}\tiny
+  {\Exo2Local\makebox[2.8cm][l]{\bfseries Exo 2}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\FiraSansLocal\makebox[2.8cm][l]{\bfseries Fira Sans}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\FiraSansCondensedLocal\makebox[2.8cm][l]{\bfseries Fira Sans Condensed}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\FjallaOneLocal\makebox[2.8cm][l]{\bfseries Fjalla One}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\FredokaLocal\makebox[2.8cm][l]{\bfseries Fredoka}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\HankenGroteskLocal\makebox[2.8cm][l]{\bfseries Hanken Grotesk}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\HindLocal\makebox[2.8cm][l]{\bfseries Hind}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\HubotSansLocal\makebox[2.8cm][l]{\bfseries Hubot Sans}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\IBMPlexSansLocal\makebox[2.8cm][l]{\bfseries IBM Plex Sans}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\IBMPlexSansCondensedLocal\makebox[2.8cm][l]{\bfseries IBM Plex Sans Condensed}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\InterLocal\makebox[2.8cm][l]{\bfseries Inter}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\JosefinSansLocal\makebox[2.8cm][l]{\bfseries Josefin Sans}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\JostLocal\makebox[2.8cm][l]{\bfseries Jost}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\KarlaLocal\makebox[2.8cm][l]{\bfseries Karla}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\LatoLocal\makebox[2.8cm][l]{\bfseries Lato}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\LeagueGothicLocal\makebox[2.8cm][l]{\bfseries League Gothic}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\LeagueSpartanLocal\makebox[2.8cm][l]{\bfseries League Spartan}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\LexendLocal\makebox[2.8cm][l]{\bfseries Lexend}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+\end{frame}
+
+\begin{frame}{Sans (3)}
+\vspace{-0.2cm}\tiny
+  {\LibreFranklinLocal\makebox[2.8cm][l]{\bfseries Libre Franklin}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\MPLUSRounded1cLocal\makebox[2.8cm][l]{\bfseries M PLUS Rounded 1c}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\ManropeLocal\makebox[2.8cm][l]{\bfseries Manrope}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\MonaSansLocal\makebox[2.8cm][l]{\bfseries Mona Sans}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\MontserratLocal\makebox[2.8cm][l]{\bfseries Montserrat}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\MulishLocal\makebox[2.8cm][l]{\bfseries Mulish}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\NotoSansLocal\makebox[2.8cm][l]{\bfseries Noto Sans}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\NunitoLocal\makebox[2.8cm][l]{\bfseries Nunito}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\NunitoSansLocal\makebox[2.8cm][l]{\bfseries Nunito Sans}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\OpenSansLocal\makebox[2.8cm][l]{\bfseries Open Sans}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\OswaldLocal\makebox[2.8cm][l]{\bfseries Oswald}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\OutfitLocal\makebox[2.8cm][l]{\bfseries Outfit}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\PTSansLocal\makebox[2.8cm][l]{\bfseries PT Sans}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\PoppinsLocal\makebox[2.8cm][l]{\bfseries Poppins}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\PublicSansLocal\makebox[2.8cm][l]{\bfseries Public Sans}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\QuestrialLocal\makebox[2.8cm][l]{\bfseries Questrial}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\QuicksandLocal\makebox[2.8cm][l]{\bfseries Quicksand}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\RajdhaniLocal\makebox[2.8cm][l]{\bfseries Rajdhani}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\UbuntuLocal\makebox[2.8cm][l]{\bfseries Ubuntu}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\VarelaRoundLocal\makebox[2.8cm][l]{\bfseries Varela Round}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\TomorrowLocal\makebox[2.8cm][l]{\bfseries Tomorrow}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+\end{frame}
+
+\begin{frame}{Sans (4)}
+\vspace{-0.2cm}\tiny
+  {\RalewayLocal\makebox[2.8cm][l]{\bfseries Raleway}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\RethinkSansLocal\makebox[2.8cm][l]{\bfseries Rethink Sans}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\RobotoLocal\makebox[2.8cm][l]{\bfseries Roboto}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\RobotoCondensedLocal\makebox[2.8cm][l]{\bfseries Roboto Condensed}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\RubikLocal\makebox[2.8cm][l]{\bfseries Rubik}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\SixCapsLocal\makebox[2.8cm][l]{\bfseries Six Caps}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\SnigletLocal\makebox[2.8cm][l]{\bfseries Sniglet}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\SoraLocal\makebox[2.8cm][l]{\bfseries Sora}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\SourGummyLocal\makebox[2.8cm][l]{\bfseries Sour Gummy}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\SourceSans3Local\makebox[2.8cm][l]{\bfseries Source Sans 3}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\SpaceGroteskLocal\makebox[2.8cm][l]{\bfseries Space Grotesk}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\StaatlichesLocal\makebox[2.8cm][l]{\bfseries Staatliches}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\TekoLocal\makebox[2.8cm][l]{\bfseries Teko}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\UbuntuLocal\makebox[2.8cm][l]{\bfseries Ubuntu}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\UrbanistLocal\makebox[2.8cm][l]{\bfseries Urbanist}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\VarelaRoundLocal\makebox[2.8cm][l]{\bfseries Varela Round}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\WorkSansLocal\makebox[2.8cm][l]{\bfseries Work Sans}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
 \end{frame}
 
-\begin{frame}{4. Sans-Serif ? Condensed, Narrow, Rounded}
+\begin{frame}{Mono (1)}
 \vspace{-0.2cm}\tiny
-  {\BebasNeueLocal\makebox[2.8cm][l]{\bfseries Bebas Neue}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\ChakraPetchLocal\makebox[2.8cm][l]{\bfseries Chakra Petch}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\FjallaOneLocal\makebox[2.8cm][l]{\bfseries Fjalla One}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\AntonLocal\makebox[2.8cm][l]{\bfseries Anton}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\AudiowideLocal\makebox[2.8cm][l]{\bfseries Audiowide}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\MPLUSRounded1cLocal\makebox[2.8cm][l]{\bfseries M PLUS Rounded 1c}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-\end{frame}
-
-\begin{frame}{5. Monospace ? Code, Typewriter}
-\vspace{-0.2cm}\tiny
+  {\AnonymousProLocal\makebox[2.8cm][l]{\bfseries Anonymous Pro}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\AzeretMonoLocal\makebox[2.8cm][l]{\bfseries Azeret Mono}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\CourierPrimeLocal\makebox[2.8cm][l]{\bfseries Courier Prime}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\CousineLocal\makebox[2.8cm][l]{\bfseries Cousine}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\CutiveMonoLocal\makebox[2.8cm][l]{\bfseries Cutive Mono}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\DMMonoLocal\makebox[2.8cm][l]{\bfseries DM Mono}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\FiraCodeLocal\makebox[2.8cm][l]{\bfseries Fira Code}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\GeistMonoLocal\makebox[2.8cm][l]{\bfseries Geist Mono}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\GoogleSansCodeLocal\makebox[2.8cm][l]{\bfseries Google Sans Code}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\IBMPlexMonoLocal\makebox[2.8cm][l]{\bfseries IBM Plex Mono}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\InconsolataLocal\makebox[2.8cm][l]{\bfseries Inconsolata}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\JetBrainsMonoLocal\makebox[2.8cm][l]{\bfseries JetBrains Mono}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\MajorMonoDisplayLocal\makebox[2.8cm][l]{\bfseries Major Mono Display}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\MonotonLocal\makebox[2.8cm][l]{\bfseries Monoton}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\NotoSansMonoLocal\makebox[2.8cm][l]{\bfseries Noto Sans Mono}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\RobotoMonoLocal\makebox[2.8cm][l]{\bfseries Roboto Mono}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\RubikMonoOneLocal\makebox[2.8cm][l]{\bfseries Rubik Mono One}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\ShareTechMonoLocal\makebox[2.8cm][l]{\bfseries Share Tech Mono}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+\end{frame}
+
+\begin{frame}{Mono (2)}
+\vspace{-0.2cm}\tiny
+  {\SourceCodeProLocal\makebox[2.8cm][l]{\bfseries Source Code Pro}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\SpaceMonoLocal\makebox[2.8cm][l]{\bfseries Space Mono}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\SpecialEliteLocal\makebox[2.8cm][l]{\bfseries Special Elite}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\SyneMonoLocal\makebox[2.8cm][l]{\bfseries Syne Mono}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\UbuntuMonoLocal\makebox[2.8cm][l]{\bfseries Ubuntu Mono}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\XanhMonoLocal\makebox[2.8cm][l]{\bfseries Xanh Mono}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
 \end{frame}
 
-\begin{frame}{6. Display ? Bold Poster, Fashion, Tech}
+\begin{frame}{Display (1)}
 \vspace{-0.2cm}\tiny
+  {\AudiowideLocal\makebox[2.8cm][l]{\bfseries Audiowide}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\BangersLocal\makebox[2.8cm][l]{\bfseries Bangers}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\BlackOpsOneLocal\makebox[2.8cm][l]{\bfseries Black Ops One}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\BungeeLocal\makebox[2.8cm][l]{\bfseries Bungee}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\ChangaOneLocal\makebox[2.8cm][l]{\bfseries Changa One}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\LuckiestGuyLocal\makebox[2.8cm][l]{\bfseries Luckiest Guy}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\ZenDotsLocal\makebox[2.8cm][l]{\bfseries Zen Dots}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\LimelightLocal\makebox[2.8cm][l]{\bfseries Limelight}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\MonotonLocal\makebox[2.8cm][l]{\bfseries Monoton}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-\end{frame}
-
-\begin{frame}{7. Display ? Vintage, Retro, Poster}
-\vspace{-0.2cm}\tiny
-  {\BangersLocal\makebox[2.8cm][l]{\bfseries Bangers}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\BevanLocal\makebox[2.8cm][l]{\bfseries Bevan}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\AlmendraLocal\makebox[2.8cm][l]{\bfseries Almendra}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\CreteRoundLocal\makebox[2.8cm][l]{\bfseries Crete Round}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\EwertLocal\makebox[2.8cm][l]{\bfseries Ewert}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\FascinateLocal\makebox[2.8cm][l]{\bfseries Fascinate}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\FrijoleLocal\makebox[2.8cm][l]{\bfseries Frijole}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\GraduateLocal\makebox[2.8cm][l]{\bfseries Graduate}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\LimelightLocal\makebox[2.8cm][l]{\bfseries Limelight}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\LobsterLocal\makebox[2.8cm][l]{\bfseries Lobster}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\LuckiestGuyLocal\makebox[2.8cm][l]{\bfseries Luckiest Guy}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\MichromaLocal\makebox[2.8cm][l]{\bfseries Michroma}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\OrbitronLocal\makebox[2.8cm][l]{\bfseries Orbitron}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\OxaniumLocal\makebox[2.8cm][l]{\bfseries Oxanium}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\PacificoLocal\makebox[2.8cm][l]{\bfseries Pacifico}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\RyeLocal\makebox[2.8cm][l]{\bfseries Rye}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\SancreekLocal\makebox[2.8cm][l]{\bfseries Sancreek}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\SmokumLocal\makebox[2.8cm][l]{\bfseries Smokum}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\SpecialEliteLocal\makebox[2.8cm][l]{\bfseries Special Elite}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\SixCapsLocal\makebox[2.8cm][l]{\bfseries Six Caps}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\UltraLocal\makebox[2.8cm][l]{\bfseries Ultra}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
 \end{frame}
 
-\begin{frame}{8. Script ? Elegant, Brush, Sign}
+\begin{frame}{Display (2)}
+\vspace{-0.2cm}\tiny
+  {\TomorrowLocal\makebox[2.8cm][l]{\bfseries Tomorrow}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\ZenDotsLocal\makebox[2.8cm][l]{\bfseries Zen Dots}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+\end{frame}
+
+\begin{frame}{Script}
 \vspace{-0.2cm}\tiny
   {\AlexBrushLocal\makebox[2.8cm][l]{\bfseries Alex Brush}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\AlluraLocal\makebox[2.8cm][l]{\bfseries Allura}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\CourgetteLocal\makebox[2.8cm][l]{\bfseries Courgette}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\DamionLocal\makebox[2.8cm][l]{\bfseries Damion}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\DancingScriptLocal\makebox[2.8cm][l]{\bfseries Dancing Script}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\GreatVibesLocal\makebox[2.8cm][l]{\bfseries Great Vibes}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\KaushanScriptLocal\makebox[2.8cm][l]{\bfseries Kaushan Script}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\MeriendaLocal\makebox[2.8cm][l]{\bfseries Merienda}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\NoricanLocal\makebox[2.8cm][l]{\bfseries Norican}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\OleoScriptLocal\makebox[2.8cm][l]{\bfseries Oleo Script}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\PacificoLocal\makebox[2.8cm][l]{\bfseries Pacifico}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\ParisienneLocal\makebox[2.8cm][l]{\bfseries Parisienne}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\PetitFormalScriptLocal\makebox[2.8cm][l]{\bfseries Petit Formal Script}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\PinyonScriptLocal\makebox[2.8cm][l]{\bfseries Pinyon Script}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
@@ -242,39 +443,51 @@
   {\YellowtailLocal\makebox[2.8cm][l]{\bfseries Yellowtail}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
 \end{frame}
 
-\begin{frame}{9. Handwriting ? Casual, Personal}
+\begin{frame}{Hand}
 \vspace{-0.2cm}\tiny
   {\ArchitectsDaughterLocal\makebox[2.8cm][l]{\bfseries Architects Daughter}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\CaveatLocal\makebox[2.8cm][l]{\bfseries Caveat}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\ComingSoonLocal\makebox[2.8cm][l]{\bfseries Coming Soon}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\GamjaFlowerLocal\makebox[2.8cm][l]{\bfseries Gamja Flower}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\GloriaHallelujahLocal\makebox[2.8cm][l]{\bfseries Gloria Hallelujah}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\HomemadeAppleLocal\makebox[2.8cm][l]{\bfseries Homemade Apple}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\IndieFlowerLocal\makebox[2.8cm][l]{\bfseries Indie Flower}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\KalamLocal\makebox[2.8cm][l]{\bfseries Kalam}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\NanumPenScriptLocal\makebox[2.8cm][l]{\bfseries Nanum Pen Script}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\PatrickHandLocal\makebox[2.8cm][l]{\bfseries Patrick Hand}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\PermanentMarkerLocal\makebox[2.8cm][l]{\bfseries Permanent Marker}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\ReenieBeanieLocal\makebox[2.8cm][l]{\bfseries Reenie Beanie}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\ShadowsIntoLightLocal\makebox[2.8cm][l]{\bfseries Shadows Into Light}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\ShortStackLocal\makebox[2.8cm][l]{\bfseries Short Stack}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
 \end{frame}
 
-\begin{frame}{10. Special ? Playful, Gothic, Blackletter}
+\begin{frame}{Playful}
 \vspace{-0.2cm}\tiny
   {\BalsamiqSansLocal\makebox[2.8cm][l]{\bfseries Balsamiq Sans}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\BoogalooLocal\makebox[2.8cm][l]{\bfseries Boogaloo}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\BubblegumSansLocal\makebox[2.8cm][l]{\bfseries Bubblegum Sans}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\CherryBombOneLocal\makebox[2.8cm][l]{\bfseries Cherry Bomb One}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\ChewyLocal\makebox[2.8cm][l]{\bfseries Chewy}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\ComicNeueLocal\makebox[2.8cm][l]{\bfseries Comic Neue}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\CousineLocal\makebox[2.8cm][l]{\bfseries Cousine}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\LobsterLocal\makebox[2.8cm][l]{\bfseries Lobster}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\MichromaLocal\makebox[2.8cm][l]{\bfseries Michroma}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\DynaPuffLocal\makebox[2.8cm][l]{\bfseries DynaPuff}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\GamjaFlowerLocal\makebox[2.8cm][l]{\bfseries Gamja Flower}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\PatrickHandLocal\makebox[2.8cm][l]{\bfseries Patrick Hand}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\ShortStackLocal\makebox[2.8cm][l]{\bfseries Short Stack}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+\end{frame}
+
+\begin{frame}{Gothic}
+\vspace{-0.2cm}\tiny
+  {\AlmendraLocal\makebox[2.8cm][l]{\bfseries Almendra}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\GrenzeLocal\makebox[2.8cm][l]{\bfseries Grenze}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\GrenzeGotischLocal\makebox[2.8cm][l]{\bfseries Grenze Gotisch}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\MedievalSharpLocal\makebox[2.8cm][l]{\bfseries MedievalSharp}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\NewRockerLocal\makebox[2.8cm][l]{\bfseries New Rocker}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\PirataOneLocal\makebox[2.8cm][l]{\bfseries Pirata One}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\SnigletLocal\makebox[2.8cm][l]{\bfseries Sniglet}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
   {\UnifrakturMaguntiaLocal\makebox[2.8cm][l]{\bfseries UnifrakturMaguntia}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
-  {\MedievalSharpLocal\makebox[2.8cm][l]{\bfseries MedievalSharp}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+\end{frame}
+
+\begin{frame}{Other}
+\vspace{-0.2cm}\tiny
+  {\AssistantLocal\makebox[2.8cm][l]{\bfseries Assistant}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\CatamaranLocal\makebox[2.8cm][l]{\bfseries Catamaran}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\ChivoLocal\makebox[2.8cm][l]{\bfseries Chivo}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
+  {\FamiljenGroteskLocal\makebox[2.8cm][l]{\bfseries Familjen Grotesk}\hspace{0.15cm}\makebox[7.2cm][l]{The quick brown fox jumps over the lazy dog.}}
 \end{frame}
 
 \end{document}
