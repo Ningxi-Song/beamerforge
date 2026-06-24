@@ -1,4 +1,10 @@
-<p><b style="font-size:2em">D Rose</b> <img src="fig/derrick-rose-seeklogo.png" width="150" align="right" alt="D Rose Logo"><br><i>In the midst of oppression, we bloom.</i></p>
+# D Rose
+
+*by Willie SONG*
+
+<img src="fig/derrick-rose-seeklogo.png" width="100" align="right" alt="D Rose Logo">
+
+> *In the midst of oppression, we bloom.*
 
 ## Inspiration
 
