@@ -1,7 +1,5 @@
 # D Rose
 
-*by Willie SONG*
-
 <img src="fig/derrick-rose-seeklogo.png" width="100" align="right" alt="D Rose Logo">
 
 > *In the midst of oppression, we bloom.*
@@ -58,3 +56,7 @@ Edit `d-rose.cls`:
 ```
 
 Replace the title page background: swap `fig/hkskyline.png` with your own image.
+
+---
+
+<small>Created by Willie SONG</small>
