@@ -91,9 +91,9 @@ Each template is a complete, compilable Beamer theme with its own personality an
 | Aspect | Description |
 |--------|-------------|
 | **Creator** | Willie SONG |
-| **Inspiration** | Original Bamboo template structure, with the bamboo image used only as a README introduction visual |
-| **Core concept** | A restrained, replaceable academic Beamer recipe with clear hierarchy and simple navigation |
-| **Visual tone** | Blue-white academic palette, Palatino serif text, clean blocks, generous white space |
+| **Inspiration** | Chinese landscape painting, especially the crisp, upright, and forceful brushwork of bamboo |
+| **Core concept** | Clean academic structure with fresh, transparent elements and a firm visual rhythm |
+| **Visual tone** | Blue-white academic palette, Palatino serif text, clean blocks, generous white space, and a crisp bamboo-inspired restraint |
 | **Best for** | Research talks, policy briefings, concept pitches, and analytical presentations |
 | **Colors** | Original blue-white palette with subtle alert accents |
 | **Fonts** | Palatino serif body text |
