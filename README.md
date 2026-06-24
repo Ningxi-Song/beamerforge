@@ -71,21 +71,37 @@ beamer-design-system/
 
 Each template is a complete, compilable Beamer theme with its own personality and best-fit scenario.
 
-### [D Rose](recipes/d-rose/) — Bloom in Darkness
+### [D Rose](recipes/d-rose/) - Bloom in Darkness
 
 | Aspect | Description |
 |--------|-------------|
 | **Inspiration** | Derrick Rose (NBA superstar): his logo, his career of soaring highs and crushing lows |
 | **Core concept** | Oppression and blooming coexist; prosperity and regret are inseparable |
 | **Visual tone** | Deep red against white, serif fonts, subdued elegance with an undercurrent of tension |
-| **Best for** | Polarizing topics — social inequality, urban segregation, crisis narratives, dualities |
+| **Best for** | Polarizing topics: social inequality, urban segregation, crisis narratives, dualities |
 | **Colors** | Red-black primary (RGB 186,84,68), white background, dark navy structure |
 | **Fonts** | Neuton (serif, bundled) |
 | **Navigation** | Miniframes header, page-number footer |
-| **Blocks** | 2 types — regular (dark gray title, light red body) + alert (red title, light red body) |
-| **Bullets** | Pifont ding (● outline style) |
-| **Preview** | [page01](recipes/d-rose/page01.png) · [page04](recipes/d-rose/page04.png) · [page06](recipes/d-rose/page06.png) |
-```
+| **Blocks** | Regular block with dark gray title and light red body; alert block with red title and light red body |
+| **Bullets** | Pifont ding outline style |
+| **Preview** | [page01](recipes/d-rose/page01.png) / [page04](recipes/d-rose/page04.png) / [page06](recipes/d-rose/page06.png) |
+
+### [Bamboo](recipes/bamboo/) - Clean Academic Structure
+
+| Aspect | Description |
+|--------|-------------|
+| **Creator** | Willie SONG |
+| **Inspiration** | Original Bamboo template structure, with the bamboo image used only as a README introduction visual |
+| **Core concept** | A restrained, replaceable academic Beamer recipe with clear hierarchy and simple navigation |
+| **Visual tone** | Blue-white academic palette, Palatino serif text, clean blocks, generous white space |
+| **Best for** | Research talks, policy briefings, concept pitches, and analytical presentations |
+| **Colors** | Original blue-white palette with subtle alert accents |
+| **Fonts** | Palatino serif body text |
+| **Navigation** | Miniframes header, page-number footer |
+| **Blocks** | Rounded Beamer blocks in normal, example, and alert styles; sample takeaway uses normal blue block |
+| **Bullets** | Original pifont markers |
+| **Title page** | Optional right-side image with a white curtain for title text |
+| **Preview** | [page01](recipes/bamboo/page01.png) / [page04](recipes/bamboo/page04.png) / [page07](recipes/bamboo/page07.png) |
 
 ## For AI Users
 
