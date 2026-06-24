@@ -1,4 +1,5 @@
-<div><h1>D Rose</h1><p><img src="fig/derrick-rose-seeklogo.png" width="180" align="right" alt="D Rose Logo"><i>In the midst of oppression, we bloom.</i></p></div>
+| <h1>D Rose</h1><i>In the midst of oppression, we bloom.</i> | <img src="fig/derrick-rose-seeklogo.png" width="180" alt="D Rose Logo"> |
+|---|---|
 
 ## Inspiration
 
