@@ -8,7 +8,7 @@
 
 ## Inspiration
 
-This recipe keeps the original template structure and removes project-specific content. The image above is used only as a README introduction visual, in the same spirit as a logo or mood image on other recipe pages. It is not part of the slide body by default.
+Bamboo is inspired by Chinese landscape painting, especially the crisp, upright, and forceful presence of bamboo in ink compositions. The template translates that spirit into a clean academic structure: restrained color, clear hierarchy, light visual weight, and a concise rhythm suited for arguments that should feel fresh and firm.
 
 ## Best For
 
