@@ -6,6 +6,10 @@
   <p><strong>Contributor:</strong> Willie SONG</p>
 </div>
 
+## Preview
+
+![Bamboo slide preview](preview-contact-sheet.png)
+
 ## Inspiration
 
 Bamboo is inspired by Chinese landscape painting, especially the crisp, upright, and forceful presence of bamboo in ink compositions. The template translates that spirit into a clean academic structure: restrained color, clear hierarchy, light visual weight, and a concise rhythm suited for arguments that should feel fresh and firm.
@@ -45,6 +49,7 @@ bamboo/
 |   |-- figures.tex
 |   `-- tables.tex
 |-- fig/                # README image and optional title images
+|-- preview-contact-sheet.png  # Combined slide preview
 |-- page*.png           # Rendered preview images
 |-- references.bib      # Sample bibliography
 `-- README.md           # Recipe documentation
