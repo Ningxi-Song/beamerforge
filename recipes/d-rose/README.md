@@ -3,6 +3,7 @@
   <h1>D Rose</h1>
   <p><strong>Black-red Beamer recipe for narratives of tension, resilience, and contrast.</strong></p>
   <p><em>In the midst of oppression, we bloom.</em></p>
+  <p><strong>Contributor:</strong> Willie SONG</p>
 </div>
 
 ## Inspiration
@@ -22,6 +23,7 @@ Narratives built around polarities, contradictions, and dual forces: social ineq
 | Navigation | Soft miniframes header, page-number footer |
 | Blocks | 2 types -- normal (dark gray / light red) + alert (red / light red) |
 | Bullets | Pifont ding 220/216 |
+| Title page | Full-width skyline background with centered title text |
 
 ## Quick Start
 
@@ -36,28 +38,28 @@ xelatex main.tex
 
 ```text
 d-rose/
-├── d-rose.cls          # Theme class
-├── main.tex            # Entry point
-├── content/            # Slide sections
-│   ├── overview.tex
-│   ├── figures.tex
-│   └── tables.tex
-├── fig/                # Images
-├── font/               # Bundled Neuton fonts
-└── references.bib      # Bibliography
+|-- d-rose.cls          # Theme class
+|-- main.tex            # Entry point with replaceable metadata
+|-- content/            # Replaceable slide sections
+|   |-- overview.tex
+|   |-- figures.tex
+|   `-- tables.tex
+|-- fig/                # Images
+|-- font/               # Bundled Neuton fonts
+|-- page*.png           # Rendered preview images
+|-- references.bib      # Sample bibliography
+`-- README.md           # Recipe documentation
 ```
 
 ## Customization
 
-Edit `d-rose.cls`:
+Edit the metadata in `main.tex`, then replace the files in `content/` with your own slides.
+
+To change the title-page background, replace `fig/hkskyline.png` with your own image.
+
+To adjust the color palette, edit `d-rose.cls`:
 
 ```latex
 \definecolor{redblack}{RGB}{186,84,68}     % Primary color
 \definecolor{titleTextColor}{RGB}{1,49,78} % Structure color
 ```
-
-Replace the title page background: swap `fig/hkskyline.png` with your own image.
-
----
-
-<small>Created by Willie SONG</small>
