@@ -3,7 +3,7 @@
   <h1>Bamboo</h1>
   <p><strong>A reusable Beamer recipe adapted from the original Bamboo template.</strong></p>
   <p><em>Clean, concise, and suited for clear analytical presentations.</em></p>
-  <p><strong>Creator:</strong> Willie SONG</p>
+  <p><strong>Contributor:</strong> Willie SONG</p>
 </div>
 
 ## Inspiration
@@ -45,7 +45,9 @@ bamboo/
 |   |-- figures.tex
 |   `-- tables.tex
 |-- fig/                # README image and optional title images
-`-- references.bib      # Sample bibliography
+|-- page*.png           # Rendered preview images
+|-- references.bib      # Sample bibliography
+`-- README.md           # Recipe documentation
 ```
 
 ## Customization
